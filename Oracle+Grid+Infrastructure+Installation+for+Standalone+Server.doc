@@ -1,0 +1,548 @@
+Date: Thu, 4 May 2023 14:18:03 +0100 (BST)
+Message-ID: <511800547.9613.1683206283683@sprdcfap01.admiral.uk>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_9612_1151194943.1683206283669"
+
+------=_Part_9612_1151194943.1683206283669
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Oracle Grid Infrastructure Installation for Standalone Server</t=
+itle>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Oracle Grid Infrastructure Installation for Standalone Server</h1>
+    <div class=3D"Section1">
+        <p><strong>(0176CrestRemediated)</strong></p>
+<p>In order to use ASM for a standalone database, you must install Oracle G=
+rid Infrastructure (also know as Oracle Restart) FIRST.&nbsp; After you hav=
+e completed this page, follow this <a href=3D"/display/IKB/Create+a+Standal=
+one+Database+on+ASM+for+Guidewire">link</a> to Create a Guidewire Standalon=
+e Database on ASM.<span style=3D"color: rgb(255,0,0);">&nbsp;</span></p>
+<p><span style=3D"color: rgb(255,0,0);">This installation page is for Oracl=
+e 12c of both grid and database software.&nbsp; </span></p>
+<p>To date, Ratabase is using Oracle 11GR2.&nbsp; For that reason, please f=
+ollow this document <a href=3D"/pages/viewpage.action?pageId=3D5477439"><sp=
+an style=3D"color: rgb(255,0,0);">link</span></a> for Oracle installation o=
+f Ratabase .&nbsp; (When Ratabase moves to Oracle 12c this document will se=
+rve both GW and Ratabase Oracle installations and the Ratabase 11GR2 doc ca=
+n be archived).</p>
+<p>(Please note passwords will need to be passed as part of the install pro=
+cess which will obviously be known to the implementor - these will be chang=
+ed and secured POST installation).</p>
+<h2 id=3D"OracleGridInfrastructureInstallationforStandaloneServer-Step-by-s=
+tepguide">Step-by-step guide</h2>
+<p></p>
+<ol>
+<li>Create the VM.<br><br></li>
+</ol>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<p class=3D"title">2. Set up the oracle environment</p><span class=3D"aui-i=
+con aui-icon-small aui-iconfont-info confluence-information-macro-icon"></s=
+pan>
+<div class=3D"confluence-information-macro-body">
+<p># Copy root's SSH keys into the Oracle user's home<br>mkdir -m700 /home/=
+oracle/.ssh<br>cat /root/.ssh/authorized_keys &gt; /home/oracle/.ssh/author=
+ized_keys<br>chmod 600 /home/oracle/.ssh/authorized_keys<br>chown -R <a hre=
+f=3D"http://oracleoinstall" class=3D"external-link" rel=3D"nofollow">oracle=
+:oinstall</a> /home/oracle/.ssh<br>&nbsp; <br># Make an ORACLE_BASE<br>mkdi=
+r -p /u01/app/oracle</p>
+<p># and make oracle own other mount points :</p>
+<p>chown -R <a href=3D"http://oracleoinstall" class=3D"external-link" rel=
+=3D"nofollow">oracle:oinstall</a> /u01<br>chown -R <a href=3D"http://oracle=
+oinstall" class=3D"external-link" rel=3D"nofollow">oracle:oinstall</a> /u02=
+<br>chown -R <a href=3D"http://oracleoinstall" class=3D"external-link" rel=
+=3D"nofollow">oracle:oinstall</a> /home/oracle</p>
+<p># Create the Oracle Inventory<br>cat &gt; /etc/oraInst.loc &lt;&lt;EOF<b=
+r>inventory_loc=3D/u01/app/oracle/oraInventory<br>inst_group=3Doinstall<br>=
+EOF<br>chown <a href=3D"http://oracleoinstall" class=3D"external-link" rel=
+=3D"nofollow">oracle:oinstall</a> /etc/oraInst.loc<br>chmod 664 /etc/oraIns=
+t.loc</p>
+<p># create the .bash_profile for oracle user</p>
+<p>cp /etc/skel/.bash* ~oracle/ &amp;&amp; chown <a href=3D"http://oracledb=
+a" class=3D"external-link" rel=3D"nofollow">oracle:dba</a> ~oracle/.bash*</=
+p>
+<p>cat &gt; ~oracle/.bash_profile &lt;&lt;EOF<br># .bash_profile<br># Get t=
+he aliases and functions<br> if [ -f ~/.bashrc ]; then<br> . ~/.bashrc<br> =
+fi<br># Set the Oracle shell environment<br> umask 022<br> export TMP=3D/tm=
+p;<br> export TMPDIR=3D$TMP;</p>
+<p>PATH=3D$PATH:/sbin:$HOME/bin<br> export PATH<br> export ORACLE_BASE=3D/u=
+01/app/oracle<br> export ORACLE_SW=3D/home/oracle/rdbms/12c/linux/x86_64/<b=
+r> export ORACLE_HOME=3D/u01/app/oracle/product/<span style=3D"color: rgb(2=
+55,0,0);">12.1.0</span>/db_1<br> export GRID_HOME=3D/u02/app/oracle/product=
+/<span style=3D"color: rgb(255,0,0);">12.1.0</span>/grid<br> export LD_LIBR=
+ARY_PATH=3D$ORACLE_HOME/lib/lib:/usr/lib<br> export PATH=3D$PATH:$ORACLE_HO=
+ME/bin<br> export CLASSPATH=3D$ORACLE_HOME/JRE:$ORACLE_HOME/jlib:$ORACLE_HO=
+ME/rdbms/jlib;<br>export EDITOR=3D`which vim`</p>
+<p>alias template=3D'cd /u01/app/oracle/product/<span style=3D"color: rgb(2=
+55,0,0);">12.1.0</span>/db_1/assistants/dbca/templates'<br>alias sqlplus=3D=
+'rlwrap sqlplus'<br>alias rman=3D'rlwrap rman'<br>alias asmcmd=3D'rlwrap as=
+mcmd'<br>alias dgmgrl=3D'rlwrap dgmgrl'<br>EOF</p>
+<p><br></p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<p class=3D"title">3. Install Oracle Grid Infrastructure and Database Softw=
+are</p><span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-=
+information-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>#------------------------------------------------#<br># DOWNLOAD ORACLE =
+SOFTWARE&nbsp; #<br>#-----------------------------------------------#<br># =
+As the '<span style=3D"color: rgb(255,0,0);"><strong>oracle</strong></span>=
+' user, create the directory structure, download the install media and unzi=
+p the files<br>mkdir -p /home/oracle/rdbms/<span style=3D"color: rgb(255,0,=
+0);">12c</span>/linux/x86_64/{media,response,install}<br># Firstly load the=
+ grid infrastructure software<br>wget -q <a rel=3D"nofollow">http://10.64.1=
+09.10/media/oracle/rdbms/12102/grid/linuxamd64_12102_grid_{1,2}of2.zip</a> =
+-P <span style=3D"color: rgb(0,0,0);">$ORACLE_SW/media</span><br>for file i=
+n <span style=3D"color: rgb(0,0,0);">$ORACLE_SW/media/linuxamd64_12102_grid=
+_{1,2}of2.zip</span> <br>do<br>&nbsp;&nbsp; &nbsp;unzip -q ${file} -d $ORAC=
+LE_SW<span style=3D"color: rgb(0,0,0);">/install</span><br>done<br># then t=
+he database software<br>wget -q <a rel=3D"nofollow">http://10.64.109.10/med=
+ia/oracle/rdbms/12102/database/linuxamd64_12102_database_{1,2}of2.zip</a> -=
+P <span style=3D"color: rgb(0,0,0);">$ORACLE_SW/media</span><br>for file in=
+ <span style=3D"color: rgb(0,0,0);">$ORACLE_SW/media/linuxamd64_12102_datab=
+ase_{1,2}of2.zip</span> <br>do<br>&nbsp;&nbsp; &nbsp;unzip -q ${file} -d $O=
+RACLE_SW<span style=3D"color: rgb(0,0,0);">/install</span><br>done</p>
+<p># As <strong><span style=3D"color: rgb(255,0,0);">root</span></strong> :=
+<br><span style=3D"color: rgb(255,0,0);"><strong>export ORACLE_SW=3D/home/o=
+racle/rdbms/12c/linux/x86_64/</strong></span><br># rpm --import <a href=3D"=
+http://10.64.109.10/media/oracle/common/RPM-GPG-KEY-oracle" rel=3D"nofollow=
+" class=3D"external-link">http://10.64.109.10/media/oracle/common/RPM-GPG-K=
+EY-oracle</a><br># yum -y install oracle-rdbms-server-12cR1-preinstall<br>c=
+d $ORACLE_SW/install/grid/rpm<br>yum -y install cvuqdisk</p>
+<p>#----------------------------------------------#<br># INSTALL GRID INFRA=
+STRUCTURE #<br>#---------------------------------------------#<br># As '<sp=
+an style=3D"color: rgb(255,0,0);"><strong>oracle</strong></span>' create th=
+e response file for grid infrastructure installation for standalone server<=
+br># replace variables in <span style=3D"color: rgb(255,0,0);">red</span> a=
+s applicable<br>cat &gt; /home/oracle/rdbms/12c/linux/x86_64/response/grid_=
+install.rsp &lt;&lt;EOF<br>oracle.install.responseFileVersion=3D/oracle/ins=
+tall/rspfmt_crsinstall_response_schema_v12.1.0<br>ORACLE_HOSTNAME=3D<br> IN=
+VENTORY_LOCATION=3D/u01/app/oraInventory<br> SELECTED_LANGUAGES=3Den<br> or=
+acle.install.option=3DHA_CONFIG<br> ORACLE_BASE=3D/u01/app/oracle<br> ORACL=
+E_HOME=3D/u02/app/oracle/product/<span style=3D"color: rgb(255,0,0);">12.1.=
+0</span>/grid<br> oracle.install.asm.OSDBA=3Doinstall<br> oracle.install.as=
+m.OSOPER=3D<br> oracle.install.asm.OSASM=3Doinstall<br> oracle.install.crs.=
+config.gpnp.scanName=3D<br> oracle.install.crs.config.gpnp.scanPort=3D<br> =
+oracle.install.crs.config.ClusterType=3DSTANDARD<br> oracle.install.crs.con=
+fig.clusterName=3D<br> oracle.install.crs.config.gpnp.configureGNS=3Dfalse<=
+br> oracle.install.crs.config.autoConfigureClusterNodeVIP=3Dtrue<br> oracle=
+.install.crs.config.gpnp.gnsOption=3DCREATE_NEW_GNS<br> oracle.install.crs.=
+config.gpnp.gnsClientDataFile=3D<br> oracle.install.crs.config.gpnp.gnsSubD=
+omain=3D<br> oracle.install.crs.config.gpnp.gnsVIPAddress=3D<br> oracle.ins=
+tall.crs.config.clusterNodes=3D<br> oracle.install.crs.config.networkInterf=
+aceList=3D<br> oracle.install.crs.config.storageOption=3D<br> oracle.instal=
+l.crs.config.sharedFileSystemStorage.votingDiskLocations=3D<br> oracle.inst=
+all.crs.config.sharedFileSystemStorage.votingDiskRedundancy=3DNORMAL<br> or=
+acle.install.crs.config.sharedFileSystemStorage.ocrLocations=3D<br> oracle.=
+install.crs.config.sharedFileSystemStorage.ocrRedundancy=3DNORMAL<br> oracl=
+e.install.crs.config.useIPMI=3Dfalse<br> oracle.install.crs.config.ipmi.bmc=
+Username=3D<br> oracle.install.crs.config.ipmi.bmcPassword=3D<br> oracle.in=
+stall.asm.SYSASMPassword=3Dxxxxxxxx<br> oracle.install.asm.diskGroup.name=
+=3DCRS<br> oracle.install.asm.diskGroup.redundancy=3DNORMAL<br> oracle.inst=
+all.asm.diskGroup.AUSize=3D1<br> oracle.install.asm.diskGroup.disks=3D/dev/=
+oracleasm/disksdg,/dev/oracleasm/disksdh,/dev/oracleasm/disksdi<br> oracle.=
+install.asm.diskGroup.diskDiscoveryString=3D/dev/oracleasm<br> oracle.insta=
+ll.asm.monitorPassword=3Dxxxxxxxx<br> oracle.install.asm.ClientDataFile=3D<=
+br> oracle.install.crs.config.ignoreDownNodes=3Dfalse<br> oracle.install.co=
+nfig.managementOption=3DNONE<br> oracle.install.config.omsHost=3D<br> oracl=
+e.install.config.omsPort=3D0<br> oracle.install.config.emAdminUser=3D<br> o=
+racle.install.config.emAdminPassword=3D<br>EOF</p>
+<p><br>#&nbsp; As 'oracle' run the OUI silently to install Grid Infrastruct=
+ure :<br>$ORACLE_SW/install/grid/runInstaller -silent -force -responseFile =
+$ORACLE_SW/response/grid_install.rsp -waitforcompletion</p>
+<p># Post installation</p>
+<p># Please note the first of these scripts (orainstRoot.sh) - it is not st=
+rictly necessary to run it as we created the&nbsp; /etc/oraInst.loc file ea=
+rlier - the installer will prompt for it however and there is no harm in re=
+-running it &nbsp;</p>
+<p>As a root user, execute the following script(s):</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <s>1. /u01/app/oraInventory/o=
+rainstRoot.sh</s></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. /u02/app/oracle/product/<s=
+pan style=3D"color: rgb(255,0,0);">12.1.0</span>/grid/root.sh</p>
+<p># You should see a message at the end of the log indicated like :</p>
+<p># <span style=3D"color: rgb(255,0,0);">CLSRSC-327: Successfully configur=
+ed Oracle Restart for a standalone server</span></p>
+<p># As the 'oracle' user, create password response file (passwords can be =
+changed later) :<br>cat &gt; $ORACLE_SW/response/credentials.rsp &lt;&lt;EO=
+F<br>oracle.assistants.asm|S_ASMPASSWORD=3Dxxxxxxxx<br>oracle.assistants.as=
+m|S_ASMMONITORPASSWORD=3Dxxxxxxxx<br>EOF<br>$GRID_HOME/cfgtoollogs/configTo=
+olAllCommands RESPONSE_FILE=3D$ORACLE_SW/response/credentials.rsp<br># chec=
+k the log as indicated</p>
+<p># set the environment<br>[oracle@hostname grid]$ . oraenv<br>ORACLE_SID =
+=3D [oracle] ? +ASM<br>The Oracle base remains unchanged with value /u01/ap=
+p/oracle</p>
+<p>#--------------------------------------------------------------------#<b=
+r>#&nbsp; CONFIGURE ASM DISK GROUPS +DATA and +FRA #<br>#------------------=
+-------------------------------------------------#<br>asmca -silent -create=
+DiskGroup -diskGroupName DATA -diskList '/dev/oracleasm/disksde' -redundanc=
+y external -au_size 4 -compatible.asm 12.1 -compatible.rdbms 12.1 -sysAsmPa=
+ssword xxxxxxxx<br>asmca -silent -createDiskGroup -diskGroupName FRA&nbsp;&=
+nbsp; -diskList '/dev/oracleasm/disksdf' -redundancy external -au_size 4 -c=
+ompatible.asm 12.1 -compatible.rdbms 12.1 -sysAsmPassword xxxxxxxx</p>
+<p><span style=3D"color: rgb(153,153,153);">ASMCMD&gt; lsdg</span><br><span=
+ style=3D"color: rgb(153,153,153);">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rebal&n=
+bsp; Sector&nbsp; Block&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; AU&nbsp;&nbsp; Total_MB&nbsp; Free_MB&nbsp;&nbsp; Req_mir_free_MB&nbsp; =
+Usable_file_MB&nbsp; Offline_disks&nbsp; Voting_files&nbsp; Name</span><br>=
+<span style=3D"color: rgb(153,153,153);">MOUNTED&nbsp; EXTERN&nbsp; N&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 512&nbsp;&nbsp;&nbsp;&nbsp; 4096=
+&nbsp; 1048576&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6144&nbsp;&n=
+bsp;&nbsp; &nbsp; &nbsp; 6082&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6082&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CRS/</span><br><span style=3D"=
+color: rgb(153,153,153);">MOUNTED&nbsp; EXTERN&nbsp; N&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; 512&nbsp;&nbsp;&nbsp;&nbsp; 4096&nbsp; 4194304&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30720&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 306=
+36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 30636&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;=
+&nbsp;&nbsp;&nbsp;N &nbsp; &nbsp; &nbsp;&nbsp; DATA/</span><br><span style=
+=3D"color: rgb(153,153,153);">MOUNTED&nbsp; EXTERN&nbsp; N&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 512&nbsp;&nbsp;&nbsp;&nbsp; 4096&nbsp; 4194=
+304&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30720 &nbsp; &nbsp;&nbsp; 30636&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30636&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FRA/</span></p>
+<p>#----------------------------------------------------#<br># INSTALL DATA=
+BASE SOFTWARE ONLY #<br>#--------------------------------------------------=
+-#<br># Create the response file for database installation<br>cat &gt; $ORA=
+CLE_SW/response/db_install.rsp &lt;&lt;EOF<br>oracle.install.responseFileVe=
+rsion=3D/oracle/install/rspfmt_dbinstall_response_schema_v12.1.0<br> oracle=
+.install.option=3DINSTALL_DB_SWONLY<br> ORACLE_HOSTNAME=3D<br> UNIX_GROUP_N=
+AME=3Doinstall<br> INVENTORY_LOCATION=3D/u01/app/oraInventory<br> SELECTED_=
+LANGUAGES=3Den<br> ORACLE_HOME=3D/u01/app/oracle/product/<span style=3D"col=
+or: rgb(255,0,0);">12.1.0</span>/db_1<br> ORACLE_BASE=3D/u01/app/oracle<br>=
+ oracle.install.db.InstallEdition=3DEE<br> oracle.install.db.DBA_GROUP=3Ddb=
+a<br> oracle.install.db.OPER_GROUP=3D<br> oracle.install.db.BACKUPDBA_GROUP=
+=3Ddba<br> oracle.install.db.DGDBA_GROUP=3Ddba<br> oracle.install.db.KMDBA_=
+GROUP=3Ddba<br> oracle.install.db.rac.configurationType=3D<br> oracle.insta=
+ll.db.CLUSTER_NODES=3D<br> oracle.install.db.isRACOneInstall=3Dfalse<br> or=
+acle.install.db.racOneServiceName=3D<br> oracle.install.db.rac.serverpoolNa=
+me=3D<br> oracle.install.db.rac.serverpoolCardinality=3D0<br> oracle.instal=
+l.db.config.starterdb.type=3DGENERAL_PURPOSE<br> oracle.install.db.config.s=
+tarterdb.globalDBName=3D<br> oracle.install.db.config.starterdb.SID=3D<br> =
+oracle.install.db.ConfigureAsContainerDB=3Dfalse<br> oracle.install.db.conf=
+ig.PDBName=3D<br> oracle.install.db.config.starterdb.characterSet=3D<br> or=
+acle.install.db.config.starterdb.memoryOption=3Dfalse<br> oracle.install.db=
+.config.starterdb.memoryLimit=3D<br> oracle.install.db.config.starterdb.ins=
+tallExampleSchemas=3Dfalse<br> oracle.install.db.config.starterdb.password.=
+ALL=3D<br> oracle.install.db.config.starterdb.password.SYS=3D<br> oracle.in=
+stall.db.config.starterdb.password.SYSTEM=3D<br> oracle.install.db.config.s=
+tarterdb.password.DBSNMP=3D<br> oracle.install.db.config.starterdb.password=
+.PDBADMIN=3D<br> oracle.install.db.config.starterdb.managementOption=3DDEFA=
+ULT<br> oracle.install.db.config.starterdb.omsHost=3D<br> oracle.install.db=
+.config.starterdb.omsPort=3D0<br> oracle.install.db.config.starterdb.emAdmi=
+nUser=3D<br> oracle.install.db.config.starterdb.emAdminPassword=3D<br> orac=
+le.install.db.config.starterdb.enableRecovery=3Dfalse<br> oracle.install.db=
+.config.starterdb.storageType=3D<br> oracle.install.db.config.starterdb.fil=
+eSystemStorage.dataLocation=3D<br> oracle.install.db.config.starterdb.fileS=
+ystemStorage.recoveryLocation=3D<br> oracle.install.db.config.asm.diskGroup=
+=3D<br> oracle.install.db.config.asm.ASMSNMPPassword=3D<br> MYORACLESUPPORT=
+_USERNAME=3D<br> MYORACLESUPPORT_PASSWORD=3D<br> SECURITY_UPDATES_VIA_MYORA=
+CLESUPPORT=3Dfalse<br> DECLINE_SECURITY_UPDATES=3Dtrue<br> PROXY_HOST=3D<br=
+> PROXY_PORT=3D<br> PROXY_USER=3D<br> PROXY_PWD=3D<br> COLLECTOR_SUPPORTHUB=
+_URL=3D<br>EOF<br><br>#&nbsp; As 'oracle' run the OUI silently to install d=
+atabase software :<br>$ORACLE_SW<span style=3D"color: rgb(0,0,0);">/install=
+/</span>database/runInstaller -silent -responseFile $ORACLE_SW/response/db_=
+install.rsp -waitforcompletion<br><br></p>
+<p>As a root user, execute the following script(s):</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. /u01/app/oracle/product/<s=
+pan style=3D"color: rgb(255,0,0);">12.1.0</span>/db_1/root.sh</p>
+<p># Now choose from one of the following to create your standalone databas=
+e....&nbsp;</p>
+<p><a href=3D"/display/IKB/Create+a+Standalone+Database+on+ASM+for+Guidewir=
+e">Create a Standalone Database on ASM for Guidewire</a>&nbsp;</p>
+<p><a href=3D"/display/IKB/Create+a+Standalone+Database+on+ASM+for+Web">Cre=
+ate a Standalone Database on ASM for Web</a>&nbsp;(Quote Engine Web)</p>
+<p><a href=3D"/display/IKB/Create+an+Informatica+Repository+Database">Creat=
+e an Informatica Repository Database</a></p>
+<p><a href=3D"/display/IKB/Create+a+Standalone+Database+on+ASM+for+Microstr=
+ategy">Create a Standalone Database on ASM for Microstrategy</a></p>
+</div>
+</div>
+<p><br></p>
+<p><strong>(0176CrestRemediated)</strong></p>
+<h2 id=3D"OracleGridInfrastructureInstallationforStandaloneServer-Relatedar=
+ticles">Related articles</h2>
+<p></p>
+<p> </p>
+<ul class=3D"content-by-label">=20
+<li>=20
+<div> <span class=3D"icon aui-icon content-type-page" title=3D"Page">Page:<=
+/span>=20
+</div>=20
+<div class=3D"details"> <a href=3D"/display/IKB/BC+Default+Workflows">BC De=
+fault Workflows</a>=20
+</div> </li>=20
+<li>=20
+<div> <span class=3D"icon aui-icon content-type-page" title=3D"Page">Page:<=
+/span>=20
+</div>=20
+<div class=3D"details"> <a href=3D"/display/IKB/How+to+clone+a+Git+Reposito=
+ry+from+Admiral%27s+GitHub+Enterprise+Server+-+pr-ghub.admiral.uk">How to c=
+lone a Git Repository from Admiral's GitHub Enterprise Server - pr-ghub.adm=
+iral.uk</a>=20
+</div> </li>=20
+<li>=20
+<div> <span class=3D"icon aui-icon content-type-page" title=3D"Page">Page:<=
+/span>=20
+</div>=20
+<div class=3D"details"> <a href=3D"/display/IKB/Sollers+Consulting+-+Admira=
+l+BAU+team+-+Legacy">Sollers Consulting - Admiral BAU team - Legacy</a>=20
+</div> </li>=20
+<li>=20
+<div> <span class=3D"icon aui-icon content-type-page" title=3D"Page">Page:<=
+/span>=20
+</div>=20
+<div class=3D"details"> <a href=3D"/display/IKB/Ford+Connected+Car+Document=
+">Ford Connected Car Document</a>=20
+</div> </li>=20
+<li>=20
+<div> <span class=3D"icon aui-icon content-type-page" title=3D"Page">Page:<=
+/span>=20
+</div>=20
+<div class=3D"details"> <a href=3D"/pages/viewpage.action?pageId=3D15042230=
+3">How to create &amp; amend a policy change fee</a>=20
+</div> </li>=20
+</ul>=20
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_9612_1151194943.1683206283669--

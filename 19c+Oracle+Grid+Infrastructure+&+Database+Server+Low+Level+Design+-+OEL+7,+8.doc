@@ -1,0 +1,1652 @@
+Date: Thu, 4 May 2023 14:21:28 +0100 (BST)
+Message-ID: <437657652.9714.1683206488814@sprdcfap01.admiral.uk>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_9713_125851770.1683206488804"
+
+------=_Part_9713_125851770.1683206488804
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>19c Oracle Grid Infrastructure &amp; Database Server Low Level D=
+esign - OEL 7, 8</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>19c Oracle Grid Infrastructure &amp; Database Server Low Level Desi=
+gn - OEL 7, 8</h1>
+    <div class=3D"Section1">
+        <h1 style=3D"text-decoration: none;text-align: left;margin-left: 0.=
+0px;" id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesign=
+OEL7,8-Audience">Audience</h1>
+<p>This guide provides configuration information for network and system adm=
+inistrators, and database installation information for database administrat=
+ors (DBAs) who install and configure Oracle Clusterware and Oracle Automati=
+c Storage Management and Oracle Database in an Oracle Grid Infrastructure f=
+or a cluster installation.</p>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-Introduction">Introduction</h1>
+<p>Admiral's on premises database servers are currently running Red Hat Ent=
+erprise Linux V6.&nbsp; As part of "The Linux Upgrade" project new database=
+ servers will be built at the required version of Linux.&nbsp; At the time =
+of writing this document that version is to be confirmed as one of <span st=
+yle=3D"color: rgb(23,43,77);text-decoration: none;">Red Hat Enterprise Linu=
+x</span> V7 Oracle Enterprise Linux V7.&nbsp; All new database servers in s=
+cope of the project should be built to the design outlined below.</p>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-Certifications&amp;DeviationFromHighLevelDesign">Certifications &amp; =
+Deviation From High Level Design</h1>
+<p>Due to the current certification statement below the Oracle database ser=
+vers matching detail below cannot be either Oracle Linux 8 or Red Hat Enter=
+prise Linux 8.&nbsp; This is a deviation from the high level design for tec=
+hnical reasons.</p>
+<ul>
+<li style=3D"list-style-type: none;">
+<ul>
+<li>Oracle 11.2.0.3 is only certified up to Linux 7</li>
+</ul></li>
+<li>Oracle 11.2.0.4 and greater is certified on Linux 8</li>
+</ul>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-Scope">Scope&nbsp;</h1>
+<ul>
+<li>This design applies to Virtualised Database Servers only</li>
+<li>Oracle 11g Ratabase Physical Servers are out of scope for upgrade of Li=
+nux</li>
+<li>VVOL migration is out of scope of this project</li>
+</ul>
+<p><br></p>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-StatementonStorage">Statement on Storage</h1>
+<p>All PURE storage volumes provisioned now to support the data within the =
+Oracle databases in terms of size and configuration and the associated vmfs=
+ filesystems will be migrated to the nw Linux servers "as is".&nbsp; In the=
+ case where new or larger volumes are required this will be called out in t=
+he details below.&nbsp; For the record migration from vmfs to VVOL was orig=
+inally explored, but this has since been dismissed and is now out of scope =
+of this project since there are no DBA operational advantages in moving to =
+use VVOLS over vmfs.</p>
+<p><br></p>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-OperatingSystemChecklistforOracleGridInfrastructureandOracleRAC">Opera=
+ting System Checklist for Oracle Grid Infrastructure and Oracle RAC</h1>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Check</th>
+<th class=3D"confluenceTh">Task</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Operating<br>system general<br>requirements</td>
+<td class=3D"confluenceTd"><p>OpenSSH installed manually, if you do not hav=
+e it installed already as part of a default Linux installation.</p><p>Revie=
+w the system requirements section for a list of minimum package requirement=
+s. Use the same operating system kernel and packages on each cluster member=
+ node</p>
+<ul>
+<li>Oracle Linux 8.1 with the Unbreakable Enterprise Kernel 6: 5.4.17-2011.=
+0.7.el8uek.x86_64 or later&nbsp;</li>
+<li>Oracle Linux 7.4 with the Unbreakable Enterprise Kernel 5: 4.14.35-1818=
+.1.6.el7uek.x86_64 or later</li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Oracle<br>Preinstallation RPM<br>for Oracle Linu=
+x</td>
+<td class=3D"confluenceTd"><p>If you use Oracle Linux, then Oracle recommen=
+ds that you run an Oracle preinstallation RPM for your Linux release to con=
+figure your operating system for Oracle Database and Oracle Grid Infrastruc=
+ture installations.</p></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Disable Transparent<br>HugePages</=
+td>
+<td colspan=3D"1" class=3D"confluenceTd">Oracle recommends that you disable=
+ Transparent HugePages and use standard HugePages for enhanced performance.=
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-ServerConfigurationChecklistforOracleGridInfrastructure">Server Config=
+uration Checklist for Oracle Grid Infrastructure</h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 72.=
+8%;text-align: left;text-decoration: none;margin-left: 0.0px;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 14.78%;">
+<col style=3D"width: 85.24%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Disk space allocated=
+<br>to the temporary file<br>system</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">At least 4 GB of spa=
+ce in the temporary disk space (/tmp) directory.</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Swap space allocation<br>relative =
+to RAM</td>
+<td colspan=3D"1" class=3D"confluenceTd">Between 4 GB and 16 GB: Equal to R=
+AM<br>More than 16 GB: 16 GB<br>Note: If you enable HugePages for your Linu=
+x servers, then you should deduct the memory allocated to HugePages from th=
+e<br>available RAM before calculating swap space.</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">HugePages memory<br>allocation&nbs=
+p;</td>
+<td colspan=3D"1" class=3D"confluenceTd">Allocate memory to HugePages large=
+ enough for the System Global Areas (SGA) of all databases planned to run o=
+n the cluster, and to accommodate the System Global Area for the Grid Infra=
+structure Management Repository.&nbsp;</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Mount point paths for<br>the softw=
+are binaries&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>/u01 - <span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">200 GB xfs Filesystem </span>for the Or=
+acle Database Software&nbsp;</p><p>/u02 - <span style=3D"color: rgb(23,43,7=
+7);text-decoration: none;">200 GB xfs</span> Filesystem for the Grid Infras=
+tructure Software&nbsp;</p><p>DBA_Backups - 2TB DBA NFS share&nbsp;</p><p>D=
+irectories / Homes</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Description</th>
+<th class=3D"confluenceTh">Directory</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Oracle Base</td>
+<td class=3D"confluenceTd">/u01/app/oracle</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Oracle Inventory</td>
+<td class=3D"confluenceTd">/u01/app/oraInventory</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">19c Grid Home 1</td>
+<td class=3D"confluenceTd">/u02/app/oracle/product/19.X.X/grid_1</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">19c Grid Home 2</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">/u02/app/oracle/product/19.X.X/grid_2</span>&nbsp=
+;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">12c Database Home</td>
+<td colspan=3D"1" class=3D"confluenceTd">/u01/app/oracle/product/12.1.0/db_=
+1&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">19c&nbsp;<span style=3D"color: rgb=
+(23,43,77);text-decoration: none;">Database Home</span> 1</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">/u01/app/oracle/product/19.X.X/db_1&nbsp;</span>&=
+nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">19c&nbsp;<span style=3D"color: rgb=
+(23,43,77);text-decoration: none;">Database Home</span> 2</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">/u01/app/oracle/product/19.X.X/db_2 </span>&nbsp;=
+</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Set Network Time<br>Protocol for C=
+luster<br>Time Synchronization</td>
+<td colspan=3D"1" class=3D"confluenceTd">Oracle Clusterware requires the sa=
+me time zone environment variable setting on all cluster nodes.<br>Ensure t=
+hat you set the time zone synchronization across all cluster nodes using ei=
+ther an operating system configured network time protocol (NTP) or Oracle C=
+luster Time Synchronization Service.</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Check Shared<br>Memory File System=
+<br>Mount&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">By default, your operating system =
+includes an entry in /etc/fstab to mount /dev/shm. However, if your Cluster=
+ Verification Utility (CVU) or Oracle Universal Installer (OUI) checks fail=
+, then ensure that the /dev/shm mount area is of type tmpfs and is mounted =
+with the following options:<br>=E2=80=A2 rw and exec permissions set on it<=
+br>=E2=80=A2 Without noexec or nosuid set on it<br>Note: Your operating sys=
+tem usually sets these options as the default permissions. If they are set =
+by the operating system, then they are not listed on the mount options.&nbs=
+p;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-NetworkChecklistforOracleGridInfrastructure-RACOnly">Network Checklist=
+ for Oracle Grid Infrastructure - RAC Only</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 72.=
+8%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 11.14%;">
+<col style=3D"width: 88.88%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Public network<br>ha=
+rdware</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><span style=3D"color=
+: rgb(23,43,77);text-decoration: none;">=E2=80=A2</span> Public network swi=
+tch (redundant switches recommended) connected to a public gateway and to t=
+he public interface ports for each cluster member node.<br>=E2=80=A2 Ethern=
+et interface card (redundant network cards recommended, bonded as one Ether=
+net port name).<br>=E2=80=A2 The switches and network interfaces must be at=
+ least 1 GbE.<br>=E2=80=A2 The network protocol is Transmission Control Pro=
+tocol (TCP) and Internet Protocol (IP).</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Private network<br>hardware for th=
+e<br>interconnect</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><strong>=E2=80=A2 It is believe=
+d that MainTel own and release the private IP addresses used by Oracle RAC =
+- to avoid delay these should be requested and allocated early in the proje=
+ct</strong></p><p>Private dedicated network switches (redundant switches re=
+commended), connected to the private interface ports for each cluster membe=
+r node.<br>Note: If you have more than one private network interface card f=
+or each server, then Oracle Clusterware automatically associates these inte=
+rfaces for the private network using Grid Interprocess Communication (GIPC)=
+ and Grid Infrastructure Redundant Interconnect, also known as Cluster High=
+ Availability IP (HAIP).<br>=E2=80=A2 The switches and network interface ad=
+apters must be at least 1 GbE.<br>=E2=80=A2 The interconnect must support t=
+he user datagram protocol (UDP).<br>=E2=80=A2 <span style=3D"color: rgb(255=
+,0,0);"><strong>Jumbo Frames (Ethernet frames greater than 1500 bits) are n=
+ot an IEEE standard, but can reduce UDP overhead if properly configured. Or=
+acle recommends the use of Jumbo Frames for interconnects. However, be awar=
+e that you must load-test your system, and ensure that they are enabled thr=
+oughout the stack.</strong></span></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Cluster Names and<br>Addresses</td=
+>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Determine and configure the fol=
+lowing names and addresses for the cluster:&nbsp;<br>=E2=80=A2 Cluster name=
+: Decide a name for the cluster, and be prepared to enter it during install=
+ation. The cluster name should have the<br>following characteristics:<br>Gl=
+obally unique across all hosts, even across different DNS domains.<br>At le=
+ast one character long and less than or equal to 15 characters long.</p><p>=
+<br>Consist of the same character set used for host names, in accordance wi=
+th RFC 1123: Hyphens (-), and single-byte alphanumeric characters (a to z, =
+A to Z, and 0 to 9). If you use third-party vendor clusterware, then Oracle=
+ recommends that you use the vendor cluster name.</p><p><br>=E2=80=A2 Singl=
+e Client Access Name (SCAN) and addresses Using Grid Naming Service Resolut=
+ion: Do not configure SCAN names and addresses in your DNS. SCAN names are =
+managed by GNS.&nbsp;</p><p>Using Manual Configuration and DNS resolution: =
+Configure a SCAN name to resolve to three addresses on the domain name&nbsp=
+;<br>service (DNS).</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Node Public, Private<br>and Virtua=
+l IP names<br>and Addresses&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>If you are not using GNS, then =
+configure the following for each node:<br>=E2=80=A2 Public node name and ad=
+dress, configured in the DNS and in /etc/hosts (for example, <a href=3D"htt=
+p://node1.example.com" class=3D"external-link" rel=3D"nofollow">node1.examp=
+le.com</a>, address<br>192.0.2.10). The public node name should be the prim=
+ary host name of each node, which is the name displayed by the hostname com=
+mand.<br>=E2=80=A2 Private node address, configured on the private interfac=
+e for each node. The private subnet that the private interfaces use must co=
+nnect all the nodes you intend to have as cluster members. Oracle recommend=
+s that the network you select for the private network<br>uses an address ra=
+nge defined as private by RFC 1918.&nbsp;<br>=E2=80=A2 Public node virtual =
+IP name and address (for example, node1-<a href=3D"http://vip.example.com" =
+class=3D"external-link" rel=3D"nofollow">vip.example.com</a>, address 192.0=
+.2.11).</p><p><br>If you are not using dynamic networks with GNS and subdom=
+ain delegation, then determine a virtual host name for each node. A<br>virt=
+ual host name is a public node name that is used to reroute client requests=
+ sent to the node if the node is down. Oracle Database uses VIPs for client=
+-to-database connections, so the VIP address must be publicly accessible. O=
+racle recommends that you provide a name in the format hostname-vip. For ex=
+ample: myclstr2-vip.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-UserEnvironmentConfigurationChecklistforOracleGridInfrastructure">User=
+ Environment Configuration Checklist for Oracle Grid Infrastructure</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 72.=
+57%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 10.96%;">
+<col style=3D"width: 89.05%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Review Oracle Invent=
+ory<br>(oraInventory) and OINSTALL<br>Group Requirements</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><p>The Oracle Invent=
+ory directory is the central inventory of Oracle software installed on your=
+ system. It should be the primary group for all Oracle software installatio=
+n owners. Users who have the Oracle Inventory group as their primary group =
+are granted the OINSTALL privilege to read and write to the central invento=
+ry.<br>=E2=80=A2 If you have an existing installation, then OUI detects the=
+ existing oraInventory directory from the /etc/oraInst.loc file, and uses t=
+his location.<br>=E2=80=A2 If you are installing Oracle software for the fi=
+rst time, then OUI creates an Oracle base and central inventory, and create=
+s an Oracle inventory using information in the following priority:<br>=E2=
+=80=93 In the path indicated in the ORACLE_BASE environment variable set fo=
+r the installation owner user account.<br>=E2=80=93 In an Optimal Flexible =
+Architecture (OFA) path (u[01=E2=80=9399]/app/owner where owner is the name=
+ of the user account running the installation), if that user account has pe=
+rmissions to write to that path.<br>=E2=80=93 In the user home directory, i=
+n the path /app/owner, where owner is the name of the user account running =
+the installation.</p><p>Ensure that the group designated as the OINSTALL gr=
+oup is available as the&nbsp;primary group for all planned Oracle software<=
+br>installation owners.</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Create operating system<br>groups =
+and users for standard<br>or role-allocated system<br>privileges</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Create operating system groups =
+and users depending on your security requirements, as described in this ins=
+tallation guide.&nbsp;<br>Set resource limits settings and other requiremen=
+ts for Oracle software installation owners. Group and user names must use o=
+nly ASCII characters.</p><p>Do not delete an existing daemon user. If a dae=
+mon user has been deleted, then you must add it back.</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Configure the Oracle Software<br>O=
+wner Environment&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">Configure the environment of the o=
+racle or grid user by performing the following tasks:<br>=E2=80=A2 Set the =
+default file mode creation mask (umask) to 022 in the shell startup file.<b=
+r>=E2=80=A2 Set the DISPLAY environment variable.</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Determine root privilege<br>delega=
+tion option for<br>installation&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>During installation, you are as=
+ked to run configuration scripts as the root user. You can either run these=
+ scripts manually as root when prompted, or during installation you can pro=
+vide configuration information and passwords using a root privilege delegat=
+ion option.<br>To run root scripts automatically, select Automatically run =
+configuration scripts. during installation. To use the automatic configurat=
+ion option, the root user credentials for all cluster member nodes must use=
+ the same password.</p><p>=E2=80=A2 Use root user credentials<br>Provide th=
+e superuser password for cluster member node servers.<br>=E2=80=A2 Use sudo=
+<br>sudo is a UNIX and Linux utility that allows members of the sudoers lis=
+t privileges to run individual commands as root. Provide the user name and =
+password of an operating system user that is a member of sudoers, and is au=
+thorized to run sudo on each cluster member node.</p><p><br>To enable sudo,=
+ have a system administrator with the appropriate privileges configure a us=
+er that is a member of the sudoers list, and provide the user name and pass=
+word when prompted during installation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-StorageChecklistforOracleGridInfrastructure"><br>Storage Checklist for=
+ Oracle Grid Infrastructure</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 72.=
+23%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 10.74%;">
+<col style=3D"width: 89.27%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Minimum disk space<b=
+r>(local or shared)<br>for Oracle Grid<br>Infrastructure Software</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><p style=3D"margin-l=
+eft: 0.0px;">At least 12 GB of space for the Oracle Grid Infrastructure for=
+ a cluster home (Grid home). Oracle recommends that you allocate 100 GB to =
+allow additional space for patches. At least 10 GB for Oracle Database Ente=
+rprise Edition.</p><p style=3D"margin-left: 0.0px;">=E2=80=A2 Allocate addi=
+tional storage space as per your cluster configuration, as described in Ora=
+cle Clusterware Storage Space Requirements.</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Select Oracle ASM<br>Storage Optio=
+ns</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>During installation, based on t=
+he cluster configuration, you are asked to provide Oracle ASM storage paths=
+ for the Oracle Clusterware files. These path locations must be writable by=
+ the Oracle Grid Infrastructure installation owner (Grid user). These locat=
+ions must be shared across all nodes of the cluster on Oracle ASM because t=
+he files in the Oracle ASM disk group created during installation must be a=
+vailable to all cluster member nodes.<br>=E2=80=A2 For Oracle Standalone Cl=
+uster deployment, shared storage, either Oracle ASM or shared file system, =
+is locally mounted on each of the cluster nodes.<br>=E2=80=A2 For Oracle Do=
+main Services Cluster deployment, Oracle ASM storage is shared across all n=
+odes, and is available to Oracle Member Clusters.<br>Oracle Member Cluster =
+for Oracle Databases can either use storage services from the Oracle Domain=
+ Services Cluster or local Oracle ASM storage shared across all the nodes. =
+Oracle Member Cluster for Applications always use storage services from the=
+ Oracle Domain Services Cluster. Before installing Oracle Member Cluster, c=
+reate a Member Cluster Manifest file that specifies the storage details.</p=
+><p><br>Voting files are files that Oracle Clusterware uses to verify clust=
+er node membership and status. Oracle Cluster Registry files (OCR) contain =
+cluster and database configuration information for Oracle Clusterware.&nbsp=
+;</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Select Grid<br>Infrastructure<br>M=
+anagement<br>Repository (GIMR)<br>Storage Option&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Depending on the type of cluste=
+r you are installing, you can choose to either host the Grid Infrastructure=
+ Management Repository (GIMR) for a cluster on the same cluster or on a rem=
+ote cluster.&nbsp;<br>Note: Starting with Oracle Grid Infrastructure 19c, c=
+onfiguring GIMR is optional for Oracle Standalone Cluster deployments.<br>F=
+or Oracle Standalone Cluster deployment, you can specify the same or separa=
+te Oracle ASM disk group for the GIMR.<br>For Oracle Domain Services Cluste=
+r deployment, the GIMR must be configured on a separate Oracle ASM disk gro=
+up.</p><p>Oracle Member Clusters use the remote GIMR of the Oracle Domain S=
+ervices Cluster. You must specify the GIMR details when you create<br>the M=
+ember Cluster Manifest file before installation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-ClusterDeploymentChecklistforOracleGridInfrastructure">Cluster Deploym=
+ent Checklist for Oracle Grid Infrastructure</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 87.=
+5%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 26.37%;">
+<col style=3D"width: 73.63%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Configure an Oracle =
+Cluster that hosts<br>all Oracle Grid Infrastructure services<br>and Oracle=
+ ASM locally and accesses<br>storage directly or Oracle Restart Standalone<=
+/td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><p style=3D"margin-l=
+eft: 0.0px;">Deploy an Oracle Standalone Cluster or Oracle Restart Single I=
+nstance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1 style=3D"text-decoration: none;text-align: left;margin-left: 0.0px;" id=
+=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOEL7,8-C=
+onfiguringOracle/RHELLinux">Configuring Oracle / RHEL Linux</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 77.=
+07%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 14.29%;">
+<col style=3D"width: 85.69%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"text-align: left;" class=3D"confluenceTh">Check</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"text-align: left;" class=3D"confluenceTd">Install Linux</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><p><u>Oracle Linux</=
+u></p><p>Install Oracle Linux 8.1 with the Unbreakable Enterprise Kernel 6:=
+ 5.4.17-2011.0.7.el8uek.x86_64 or later&nbsp;</p><p>Install Oracle Linux 7.=
+4 with the Unbreakable Enterprise Kernel 5: 4.14.35-1818.1.6.el7uek.x86_64 =
+or later</p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Oracle Preinstallation RPM</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(23,43=
+,77);text-decoration: none;">yum install&nbsp;</span><span style=3D"color: =
+rgb(0,0,0);text-decoration: none;">oracle-rdbms-server-12cR1-preinstall.x86=
+_64 - Specific to OL7&nbsp;</span></p><p><strong>(TBC yum install oracle-da=
+tabase-preinstall-19c&nbsp;<span style=3D"color: rgb(0,0,0);text-decoration=
+: none;">- Specific to OL8&nbsp; possible conflict with installation guide)=
+</span></strong></p>
+<ul>
+<li>Automatically downloads and installs any additional RPM packages needed=
+ for installing Oracle Grid Infrastructure and Oracle Database, and resolve=
+s any dependencies</li>
+<li>Creates an oracle user, and creates the oraInventory (oinstall) and OSD=
+BA (dba) groups for that user</li>
+<li>As needed, sets sysctl.conf settings, system startup parameters, and dr=
+iver parameters to values based on recommendations from the Oracle Preinsta=
+llation RPM program</li>
+<li>Sets hard and soft resource limits</li>
+<li>Sets other recommended parameters, depending on your kernel version</li=
+>
+<li>Sets numa=3Doff in the kernel for Linux x86_64 machines.</li>
+</ul><p>List of Packages should be</p><p>bc <br>binutils <br>compat-libcap1=
+ <br>compat-libstdc++33 <br>cvuqdisk<br>elfutils-libelf <br>elfutils-libelf=
+-devel <br>fontconfig-devel <br>glibc <br>glibc-devel <br>ksh <br>libaio <b=
+r>libaio-devel <br>libXrender <br>libXrender-devel <br>libX11 <br>libXau <b=
+r>libXi <br>libXtst <br>libgcc <br>libstdc++ <br>libstdc++-devel <br>libxcb=
+ <br>make <br>smartmontools <br>sysstat</p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">RAC &amp; ACFS</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Oracle RAC and ACFS (ASMFD) req=
+uires these packages</p><p>ipmiutil <br>net-tools <br>nfs-utils</p><p><br><=
+/p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">12c Compiler Packages</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Although Oracle 19c does not re=
+quire the compiler packages Oracle 12c does and since we need to install Or=
+acle 12c in order to migrate to Oracle 19c we require the packages below</p=
+><p>gcc-c++<br>libgcc<br>gcc</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">X-Windows</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(23,43=
+,77);text-decoration: none;">Some oracle utilities use X Windows GUI interf=
+aces, so the following packages are required </span></p><p><span style=3D"c=
+olor: rgb(23,43,77);text-decoration: none;">xorg-x11-xauth</span><br style=
+=3D"text-decoration: none;text-align: left;margin-left: 0.0px;"><span style=
+=3D"color: rgb(23,43,77);text-decoration: none;">xorg-x11-utils</span></p><=
+/td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">Oracle Linux Only Configure Ksplic=
+e&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>rpm -i ksplice-uptrack-release.=
+noarch.rpm</p><p>yum -y install uptrack</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><p>Misc Utilities &amp; Tools</p><=
+/td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Install following packages and =
+tools</p><p><u>Linux Utils package</u></p><p>util-linux</p><p><u>Other tool=
+s</u></p><p>yum install sos</p><p>yum install strace</p><p>yum install atop=
+</p><p style=3D"margin-left: 0.0px;text-align: left;">yum install htop</p><=
+p style=3D"margin-left: 0.0px;text-align: left;">yum install rlwrap</p><p>y=
+um install screen</p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">Install OpenSSH&nbsp;</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">OpenSSH is required for Oracle Grid Infrastructur=
+e installation</span></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">Disable &nbsp; Transparent HugePages</span>&nbsp;=
+</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">Oracle recommends that you disable Transparent Hu=
+gePages</span></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">Configure&nbsp; HugePages</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p style=3D"margin-left: 0.0px;tex=
+t-align: left;">If you enable HugePages, then you should deduct the memory =
+allocated to HugePages from the available RAM before calculating swap space=
+.</p><p style=3D"margin-left: 0.0px;text-align: left;">large enough for all=
+ databases planned to run SGA on the cluster, and to accommodate the SGA fo=
+r the Grid Infrastructure Management Repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 style=3D"text-decoration: none;text-align: left;margin-left: 0.0px;" id=
+=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOEL7,8-R=
+AC/StandaloneServerBuildDetail">RAC / Standalone Server Build Detail&nbsp;<=
+/h1>
+<p>Scope column indicated the following&nbsp;</p>
+<p>R - Applies to RAC Builds Only</p>
+<p>S - Applies to Standalone Builds Only</p>
+<p>RS - Applies to BOTH RAC and Standalone Builds</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 99.=
+84%;">
+<colgroup style=3D"margin-left: 0.0px;">
+<col style=3D"width: 9.97%;">
+<col style=3D"width: 5.69%;">
+<col style=3D"width: 46.8%;">
+<col style=3D"width: 37.56%;">
+</colgroup>
+<tbody style=3D"margin-left: 0.0px;">
+<tr style=3D"margin-left: 0.0px;">
+<th style=3D"width: 9.95%;text-align: left;" class=3D"confluenceTh">Attribu=
+te</th>
+<th style=3D"width: 5.67%;" class=3D"confluenceTh">Scope</th>
+<th style=3D"width: 46.73%;text-align: left;" class=3D"confluenceTh">Value =
+/ Setting</th>
+<th style=3D"width: 37.48%;" class=3D"confluenceTh">&nbsp;Check / Comment</=
+th>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>MEMORY SETTINGS</strong></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;text-align: left;" class=3D"confluenceTd">RAM</td=
+>
+<td style=3D"width: 5.67%;text-align: left;" class=3D"confluenceTd">&nbsp;R=
+S</td>
+<td style=3D"width: 46.73%;text-align: left;" class=3D"confluenceTd"><p sty=
+le=3D"margin-left: 0.0px;">Same Value As RHEL 6 legacy database servers</p>=
+</td>
+<td style=3D"width: 37.48%;text-align: left;" class=3D"confluenceTd">grep M=
+emTotal /proc/meminfo</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Swap</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">&nbsp;<span style=3D"col=
+or: rgb(23,43,77);text-decoration: none;">RS</span></td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><span style=3D"color: r=
+gb(23,43,77);text-decoration: none;">Between 4 GB and 16 GB: Equal to RAM</=
+span><br style=3D"text-decoration: none;text-align: left;margin-left: 0.0px=
+;"><span style=3D"color: rgb(23,43,77);text-decoration: none;">More than 16=
+ GB: 16 GB</span><br style=3D"text-decoration: none;text-align: left;margin=
+-left: 0.0px;"><span style=3D"color: rgb(23,43,77);text-decoration: none;">=
+Note: If you enable HugePages for your Linux servers, then you should deduc=
+t the memory allocated to HugePages from the</span><br style=3D"text-decora=
+tion: none;text-align: left;margin-left: 0.0px;"><span style=3D"color: rgb(=
+23,43,77);text-decoration: none;">available RAM before calculating swap spa=
+ce.</span></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">grep SwapTotal /proc/me=
+minfo</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Shared Memory</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">&nbsp;<span style=3D"col=
+or: rgb(23,43,77);text-decoration: none;">RS</span></td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Default (1/2 RAM)</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">df -h /dev/shm<br>&nbsp=
+;</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">Transparent HugePages</span></td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Disabled</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>grep transparent_hug=
+epage /etc/default/grub&nbsp;</p><p><span style=3D"color: rgb(23,43,77);tex=
+t-decoration: none;">cat /sys/kernel/mm/transparent_hugepage/enabled |grep =
+never</span></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">HugePages&nbsp;</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>L<span style=3D"colo=
+r: rgb(23,43,77);text-decoration: none;">arge enough for all databases plan=
+ned to run SGA on the cluster, and to accommodate&nbsp; the SGA for the Gri=
+d Infrastructure Management Repository (1GB)</span></p><p><strong><span sty=
+le=3D"color: rgb(23,43,77);text-decoration: none;">NB: This is recommended =
+for ALL database server, on servers we are migrating from where Oracle AMM =
+is being used this will need consideration by the DBA team</span></strong><=
+/p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">grep Huge /proc/meminfo=
+</td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>KERNEL SETTINGS</strong><strong>&nbsp;</strong><strong>&nbsp=
+;</strong><strong>&nbsp;</strong></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">OS Resource Settings</td=
+>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Use this table to se=
+t parameters manually if you cannot use the fixup scripts.&nbsp;</p><p>Unle=
+ss otherwise specified, the kernel parameter and shell limit values shown i=
+n the following table are minimum values only. For production database syst=
+ems, Oracle recommends that you tune these values to optimize the performan=
+ce of the system. See the operating system documentation for more informati=
+on about tuning kernel parameters.</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Parameter</th>
+<th class=3D"confluenceTh">Value</th>
+<th class=3D"confluenceTh">File</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">semmsl</td>
+<td class=3D"confluenceTd">250</td>
+<td class=3D"confluenceTd">/proc/sys/kernel/sem</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">semmns</td>
+<td class=3D"confluenceTd">32000</td>
+<td class=3D"confluenceTd">/proc/sys/kernel/sem</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">semopm</td>
+<td class=3D"confluenceTd">100</td>
+<td class=3D"confluenceTd">/proc/sys/kernel/sem</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">semmni</td>
+<td class=3D"confluenceTd">128</td>
+<td class=3D"confluenceTd">/proc/sys/kernel/sem</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">shmall</td>
+<td class=3D"confluenceTd">Greater than or equal to the value of shmmax, in=
+ pages.</td>
+<td class=3D"confluenceTd">/proc/sys/kernel/shmall</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">shmmax&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">Half the size of physical memory i=
+n bytes See My Oracle Support Note 567506.1 for additional information abou=
+t configuring shmmax<br>&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">/proc/sys/kernel/shmmax</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">shmmni&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">4096&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/kernel/shmmni&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">panic_on_oops</td>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/kernel/panic_on_oops</td=
+>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">file-max&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">6815744 &nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/fs/file-max<br>&nbsp;</t=
+d>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">aio-max-nr&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">1048576 &nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/fs/aio-max-nr<br>&nbsp;<=
+/td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">ip_local_port_range</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Minimum: 9000</p><p>Maximum: 65=
+500<br>&nbsp;</p></td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/net/ipv4/ip_local_port_r=
+ange<br>&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">rmem_default&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">262144</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/net/core/rmem_default<br=
+>&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">rmem_max&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">4194304&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/net/core/rmem_max&nbsp;<=
+/td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">wmem_default&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">262144 &nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/net/core/wmem_default&nb=
+sp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">wmem_max</td>
+<td colspan=3D"1" class=3D"confluenceTd">1048576 &nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">/proc/sys/net/core/wmem_max &nbsp;=
+</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+</tbody>
+</table>
+</div></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p><u>semmsl, semmns, s=
+emopm, and semmn</u>i</p><p>/sbin/sysctl -a | grep sem</p><p><u>shmall, shm=
+max, and shmmni </u></p><p>/sbin/sysctl -a | grep shm</p><p><u>file-max </u=
+></p><p>/sbin/sysctl -a | grep file-max</p><p><u>ip_local_port_range</u></p=
+><p>/sbin/sysctl -a | grep ip_local_port_range</p><p><u>rmem_default</u></p=
+><p>/sbin/sysctl -a | grep rmem_default</p><p><u>rmem_max</u></p><p>/sbin/s=
+ysctl -a | grep rmem_max</p><p><u>wmem_default</u></p><p>/sbin/sysctl -a | =
+grep wmem_default</p><p><u>wmem_max</u></p><p>/sbin/sysctl -a | grep wmem_m=
+ax</p><p><u>aio-max-nr</u></p><p>/sbin/sysctl -a | grep aio-max-nr</p><p><b=
+r></p><p><br></p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
+ext-decoration: none;">Disable ASLR</span>&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">R</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0=
+);text-decoration: none;">With ASLR (Address Space Layout Randomization) tu=
+rned on Oracle cannot guarantee the availability of this shared memory addr=
+ess</span></p><p><span style=3D"color: rgb(0,0,0);text-decoration: none;">a=
+dd/modify this parameter in /etc/sysctl.conf</span><br style=3D"text-decora=
+tion: none;text-align: left;"><span style=3D"color: rgb(0,0,0);text-decorat=
+ion: none;">kernel.randomize_va_space=3D0</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
+ext-decoration: none;"> /sbin/sysctl -a | grep randomize</span></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
+ext-decoration: none;">LowMem pressure</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">R</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0=
+);text-decoration: none;">Setting vm.min_free_kbytes too low prevents the s=
+ystem from reclaiming memory. This can result in system hangs and OOM-killi=
+ng multiple processes. </span>&nbsp;</p><p>Either 512Mb or&nbsp;<span style=
+=3D"color: rgb(0,0,0);text-decoration: none;">0.5% of total physical memory=
+</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
+ext-decoration: none;">/sbin/sysctl -a | grep</span>&nbsp;<span style=3D"co=
+lor: rgb(0,0,0);text-decoration: none;">min_free_kbytes</span></td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>NETWORK SETTINGS</strong><strong>&nbsp;</strong><strong>&nbs=
+p;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</st=
+rong><strong>&nbsp;</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Network Ports / F5&nbsp;</td>
+<td class=3D"confluenceTd">RS</td>
+<td class=3D"confluenceTd"><p>Exact same firewall rules to support connecti=
+vity in following areas:-</p>
+<ul>
+<li>Application connections</li>
+<li>SSH access from DBA desktops</li>
+<li>Oracle Enterprise Manager Access (13c Agent)</li>
+<li>Oracle Backups Recovery Manager Access</li>
+<li>Data guard Log Shipping</li>
+<li>Other support tools Snow, Logarithm,&nbsp;</li>
+<li>Others?</li>
+</ul></td>
+<td class=3D"confluenceTd">telnet &lt;IP Address&gt; &lt;port number&gt;</t=
+d>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Network</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Minimum TWO network =
+interfaces, one public for application access, one private for internode co=
+mmunication</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">&nbsp;ifconfig -a</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Jumbo Frames</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>It is recommended th=
+at for the Real Application Cluster Interconnect Jumbo Frames is enabled (M=
+TU size 9000)</p><p><span style=3D"color: rgb(0,0,0);text-decoration: none;=
+">When using Jumbo Frames, fewer buffer transfers are required which is par=
+t of the reduction for fragmentation and reassembly in the IP stack, and th=
+us has an impact in reducing the latency of a an Oracle block transfer.</sp=
+an></p><p><span style=3D"color: rgb(0,0,0);text-decoration: none;">Though J=
+umbo Frames can be implemented for private Cluster Interconnects, it requir=
+es very careful configuration and testing to realize its benefits. In many =
+cases, failures or inconsistencies can occur due to incorrect setup, bugs i=
+n the driver or switch software, which can result in sub-optimal performanc=
+e and network errors.</span></p><p><span style=3D"color: rgb(0,0,0);text-de=
+coration: none;">The host's network adapter must be configured with a persi=
+stent MTU size of 9000 (which will survive reboots).</span></p><p><span sty=
+le=3D"color: rgb(0,0,0);text-decoration: none;">Certain NIC's require addit=
+ional hardware configuration.</span></p><p><span style=3D"color: rgb(0,0,0)=
+;text-decoration: none;">Because of the lack of standards with Jumbo Frames=
+ the interoperability between switches can be problematic and requires adva=
+nced networking skills to troubleshoot.</span></p><p><br></p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p><span style=3D"color=
+: rgb(0,0,0);text-decoration: none;">traceroute -F "hostname2-priv" 9000 (S=
+uccess if OK)</span></p><p><span style=3D"color: rgb(0,0,0);text-decoration=
+: none;">traceroute -F "hostname2-priv" 9001 (Should Fail)</span></p><p><br=
+></p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Default Gateway</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Default gateway needs t=
+o be accessible via ping command</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>route</p><p>ping&nbs=
+p; &lt;Default GW&gt;</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">hostname&nbsp;</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p><strong>NB For RAC s=
+ervers we are using 05/06 pairs for example</strong></p><p>cpr1gwdb01.bolt.=
+admiral.uk =E2=86=92 cpr1gwdb05.bolt.admiral.uk</p><p>cpr1gwdb02.bolt.admir=
+al.uk =E2=86=92 cpr1gwdb06.bolt.admiral.uk</p><p><strong>For Standalone ser=
+vers we are the same name</strong></p><p>Same value as RHEL 6 server&nbsp;<=
+/p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">hostname</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Public IP Address</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Static IP defined in=
+ hosts file and DNS - resolves to hostname</p><p><br></p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>cat /etc/hosts</p><p=
+>nslookup &lt;Public IP Address&gt;</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Virtual Name</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>For RAC servers we a=
+re using hostname-vip for example</p><p>cpr1gwdb05-vip.bolt.admiral.uk</p><=
+p>cpr1gsdb06-vip.bolt-admiral.uk</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p><span style=3D"color=
+: rgb(23,43,77);text-decoration: none;">cat /etc/hosts</span></p><p><span s=
+tyle=3D"color: rgb(23,43,77);text-decoration: none;">nslookup &lt;VIP Name&=
+gt;</span></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Virtual IP Address</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Virtual IP on same s=
+ubnet as Public IP address&nbsp;<span style=3D"color: rgb(23,43,77);text-de=
+coration: none;">defined in hosts file and DNS but NOT in use - oracle mana=
+ges this address</span></p><p><br></p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p style=3D"margin-left=
+: 0.0px;text-align: left;">cat /etc/hosts</p><p style=3D"margin-left: 0.0px=
+;text-align: left;">nslookup &lt;Virtual IP Address&gt;</p><p style=3D"marg=
+in-left: 0.0px;text-align: left;">ifconfig -a</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Scan Name</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p><span style=3D"color=
+: rgb(23,43,77);text-decoration: none;"><strong>NB:</strong> Append "-new" =
+to same value as RHEL 6 server</span> for example</p><p>cpr1gwrac-san.bolt.=
+admiral.uk becomes cpr1gwrac-scan-new.bolt,admiral.uk</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p><span style=3D"color=
+: rgb(23,43,77);text-decoration: none;">cat /etc/hosts</span>&nbsp;</p><p><=
+span style=3D"color: rgb(23,43,77);text-decoration: none;">nslookup &lt;Sca=
+n Name&gt;</span></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Scan IP Addresses&nbsp;<=
+/td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Three Virtual IP Add=
+resses on same subnet as Public IP configured as a round robin addresses wi=
+thin DNS these are NOT defined in hosts file</p><p><br></p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p style=3D"margin-left=
+: 0.0px;text-align: left;"><span style=3D"color: rgb(23,43,77);text-decorat=
+ion: none;">cat /etc/hosts</span>&nbsp;</p><p style=3D"margin-left: 0.0px;t=
+ext-align: left;"><span style=3D"color: rgb(23,43,77);text-decoration: none=
+;">nslookup &lt;Scan Name&gt;</span></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Private Name</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Usually hostname-pri=
+v for example</p><p>cpr1gwdb05-priv.bolt.admiral.uk</p><p>cpr1gwdb06-priv.b=
+olt.admiral.uk</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><span style=3D"color: r=
+gb(23,43,77);text-decoration: none;">cat /etc/hosts</span></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd"><p>Private IP</p><p>Addr=
+ess</p></td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">R&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Private IP address on p=
+rivate interface.&nbsp; On a different subnet to public IP address. Only re=
+achable by other cluster member nodes NOT in DNS and no firewalls / iptable=
+s running on this network&nbsp;</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p style=3D"margin-left=
+: 0.0px;text-align: left;">cat /etc/hosts</p><p style=3D"margin-left: 0.0px=
+;text-align: left;">nslookup &lt;Public IP Addrress&gt;</p><p style=3D"marg=
+in-left: 0.0px;text-align: left;">systemctl status firewalld</p></td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>OS USERS SETTINGS</strong><strong>&nbsp;</strong><strong>&nb=
+sp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</s=
+trong><strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong>=
+<strong>&nbsp;</strong></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">root access</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Either direct root a=
+ccess or access via "sudo su -" from oracle account is required for the fol=
+lowing</p>
+<ul>
+<li>All new oracle installations and patching activities</li>
+<li>Administering ASMFD</li>
+<li style=3D"list-style-type: disc;">AHF Installation and administration</l=
+i>
+<li>Administering Some Grid Infrastructure Operations</li>
+</ul></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>Login as root or</p>=
+<p>From oracle account "sudo su -"</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">oracle user and groups</=
+td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>group of oinstall wi=
+th gid 54321</p><p>group of dba with gid 54322</p><p>user of oracle with ui=
+d 54321&nbsp;</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">id -a oracle&nbsp;</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Resource limits for orac=
+le user</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Set the following va=
+lues for the oracle installation owner "oracle"</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Resource</th>
+<th class=3D"confluenceTh">Soft Limit</th>
+<th class=3D"confluenceTh">Hard Limit</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">nofile</td>
+<td class=3D"confluenceTd">at least 1024</td>
+<td class=3D"confluenceTd">at least 65536</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">nproc</td>
+<td class=3D"confluenceTd">at least 2047</td>
+<td class=3D"confluenceTd">at least 16384</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">stack</td>
+<td class=3D"confluenceTd">at least 10240</td>
+<td class=3D"confluenceTd">at least 10240KB at most 32768KB</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">memlock</td>
+<td class=3D"confluenceTd">at least 90 percent of the current RAM when Huge=
+Pages memory is enabled</td>
+<td class=3D"confluenceTd">at least 90 percent of the current RAM when Huge=
+Pages memory is enabled</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>Open File descriptor=
+s</p><p>ulimit -Sn ;&nbsp;ulimit -Hn</p><p>Number of processes</p><p>ulimit=
+ -Su ;&nbsp;ulimit -Hu&nbsp;</p><p>Process stack segment size</p><p>ulimit =
+-Ss ;&nbsp;ulimit -Ss</p><p>Maximum locked memory limit</p><p>ulimit -Sl; u=
+limit -Hl</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">oracle crontab</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Some operational mainte=
+nance activities run from the Unix crontab scheduler, ensure that the oracl=
+e account is allowed to schedule jobs on the crontab queue.</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">crontab -e</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">X11 forwarding X-Windows=
+</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Some oracle utilities a=
+re GUI based and use X-Windows.&nbsp; Ensure X-11 Forwarding is on for orac=
+le user and X-Windows is working for oracle user</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">$ORACLE_HOME/bin/dbca</=
+td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>STORAGE SETTINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong><strong>&n=
+bsp;</strong></td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Disk I/O Scheduler&nbsp;=
+</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">For best performance fo=
+r Oracle ASM, Oracle recommends that you use the Deadline<br>I/O Scheduler.=
+</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">cat /sys/block/${ASM_DI=
+SK}/queue/scheduler<br>noop [deadline] cfq&nbsp;</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Enable scsi_id within VM=
+ware</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">To enable easy identifi=
+cation of disks presented to the OS and mapping these back to the storage a=
+rray set disk.EnableUUID in Vcenter&nbsp;</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p style=3D"text-align:=
+ left;">/usr/lib/udev/scsi_id -g -u -d &lt;/dev/diskname&gt;</p>&nbsp;</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">Mounted Filesystems&nbsp=
+;</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>The following mountp=
+oints, filesystem types and sizes should be presented to the OS. &nbsp;</p>=
+<p><strong>NB The root, /u01, and /u02 filesystems show reside upon dedicat=
+ed PURE volumes and NOT shared volumes.&nbsp; This allows for easy snapshot=
+ and restore of data</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Name</th>
+<th class=3D"confluenceTh">Type</th>
+<th class=3D"confluenceTh">Size</th>
+<th class=3D"confluenceTh">Owner:Group</th>
+<th colspan=3D"1" class=3D"confluenceTh"><p>Dedicated</p><p>PURE Volume</p>=
+</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">/</td>
+<td colspan=3D"1" class=3D"confluenceTd">xfs</td>
+<td colspan=3D"1" class=3D"confluenceTd">Server Team To confirm Size of roo=
+t</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">root:root</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Y&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">/tmp</td>
+<td class=3D"confluenceTd">xfs</td>
+<td class=3D"confluenceTd">4Gb (ensure noexec is removed from /etc/fstab, a=
+nd files remain in place over reboots)</td>
+<td class=3D"confluenceTd">root:root</td>
+<td colspan=3D"1" class=3D"confluenceTd">N</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">/u01</td>
+<td class=3D"confluenceTd">xfs</td>
+<td class=3D"confluenceTd">200Gb</td>
+<td class=3D"confluenceTd">oracle:oinstall</td>
+<td colspan=3D"1" class=3D"confluenceTd">Y</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">/u02&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">xfs&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">200Gb&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);text-decoration: none;">oracle:oinstall</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Y&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">DBA_Backups&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">NFS</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;2 Tb</td>
+<td colspan=3D"1" class=3D"confluenceTd">oracle:oinstall</td>
+<td colspan=3D"1" class=3D"confluenceTd">N</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>df -h</p><p>ls -l /t=
+mp /u01&nbsp; /u02</p><p>And confirmation from storage team</p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">ASM Disks</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd"><span style=3D"color: rg=
+b(23,43,77);text-decoration: none;">RS</span>&nbsp;</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Storage will present=
+ed as is using vmfs and thick provisioned.&nbsp; Any new storage required f=
+or initial builds (CRS and MGMGDB disks)&nbsp;</p><p><br></p><strong>Each A=
+SM Diskgroup needs to reside upon dedicated PURE volumes and NOT shared vol=
+umes.&nbsp; This allows for easy snapshot and restore of data</strong><p><b=
+r></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Disk Group</p><p>Name</p></th>
+<th class=3D"confluenceTh">Redundancy</th>
+<th class=3D"confluenceTh">Size</th>
+<th colspan=3D"1" class=3D"confluenceTh">Disks&nbsp;</th>
+<th colspan=3D"1" class=3D"confluenceTh"><p>Dedicate PURE</p><p>Volume&nbsp=
+;</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">+CRS</td>
+<td class=3D"confluenceTd">Normal</td>
+<td class=3D"confluenceTd">15Gb</td>
+<td colspan=3D"1" class=3D"confluenceTd">3x5Gb</td>
+<td colspan=3D"1" class=3D"confluenceTd">Y</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">+MGMTDB</td>
+<td class=3D"confluenceTd">External</td>
+<td class=3D"confluenceTd">100Gb</td>
+<td colspan=3D"1" class=3D"confluenceTd">1x100Gb</td>
+<td colspan=3D"1" class=3D"confluenceTd">Y&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">All others</td>
+<td colspan=3D"4" class=3D"confluenceTd"><p>Identical storage for +DATA(n_,=
+ +FRA(n_, +REDO1(n), +REDO2(n) snapshotted from source server we are migrat=
+ing from.</p></td>
+</tr>
+</tbody>
+</table>
+</div><p><span style=3D"color: rgb(0,0,0);"><strong>NB: Current storage is =
+provisioned as follows 1 ASM Disk Group =E2=86=92 4 ASM Disks&nbsp;=E2=86=
+=92 4 vmdks&nbsp;=E2=86=92 1 VM Datastore&nbsp;=E2=86=92 1 PURE Volume</str=
+ong></span></p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd"><p>lsblk and confirmati=
+on from Storage team</p><p><br></p></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">PURE Protection Groups</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;RS</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>The following protection group =
+needs to be configured on a per server basis for standalone database server=
+s, and for RAC servers the protection group should include all cluster memb=
+ers.</p><p>This is required in order to utilise the PURE arrany snapshot an=
+d restore capabilities</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Standalone Protection Group &nbsp;</th>
+<th colspan=3D"1" class=3D"confluenceTh">&nbsp;RAC Protection Group</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><u>Standalone DB Server</u></p><p>OS Disks (r=
+oot, /u01, u02)</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p style=3D"margin-left: 0.0px;tex=
+t-align: left;"><u>RAC Node 1</u></p><p style=3D"margin-left: 0.0px;text-al=
+ign: left;"><span style=3D"color: rgb(23,43,77);text-decoration: none;">OS =
+Disks (root, /u01, u02)</span></p><p style=3D"margin-left: 0.0px;text-align=
+: left;"><u>RAC Node 2</u></p><p style=3D"margin-left: 0.0px;text-align: le=
+ft;"><span style=3D"color: rgb(23,43,77);text-decoration: none;">OS Disks (=
+root, /u01, u02)</span></p><p style=3D"margin-left: 0.0px;text-align: left;=
+"><u><span style=3D"color: rgb(23,43,77);text-decoration: none;">RAC Node &=
+lt;<em>n&gt;</em></span></u></p><p style=3D"margin-left: 0.0px;text-align: =
+left;"><span style=3D"color: rgb(23,43,77);text-decoration: none;">OS Disks=
+ (root, /u01, u02)</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><u>ASM Disk Groups</u></p><p>+CRS, +MGMTDB,&n=
+bsp;+DATA(N),</p><p>+FRA(N),+REDO1(N), REDO2(N)</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><u>Shared ASM Disk Groups</u></=
+p><p style=3D"margin-left: 0.0px;text-align: left;">+CRS, +MGMTDB,&nbsp;+DA=
+TA(N),</p><p style=3D"margin-left: 0.0px;text-align: left;">+FRA(N),+REDO1(=
+N), REDO2(N)</p></td>
+</tr>
+</tbody>
+</table>
+</div></td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;Confirm with storage team</t=
+d>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;text-align: left;" colspan=3D"4" class=3D"conflue=
+nceTd"><strong>OTHER&nbsp; SETTINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;</strong><strong>&nbsp;</strong><strong>&nbsp;</strong><stron=
+g>&nbsp;</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">PAM</td>
+<td colspan=3D"1" class=3D"confluenceTd">RS&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,0,0=
+);text-decoration: none;">Verify the latest version of PAM is loaded</span>=
+&nbsp;</p><p><span style=3D"color: rgb(0,0,0);text-decoration: none;">sessi=
+on required </span><span style=3D"text-decoration: none;">pam_limits.so</sp=
+an></p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);t=
+ext-decoration: none;">cat /etc/pam.d/login</span></td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">NTP&nbsp;</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd">Oracle Clusterware requ=
+ires the same time zone environment variable setting on all<br>cluster node=
+s.&nbsp;</td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">systemctl status chrony=
+d</td>
+</tr>
+<tr>
+<td style=3D"width: 9.95%;" class=3D"confluenceTd">SSH</td>
+<td style=3D"width: 5.67%;" class=3D"confluenceTd">RS</td>
+<td style=3D"width: 46.73%;" class=3D"confluenceTd"><p>Oracle Clusterware i=
+nstallation can fail during the "AttachHome"<br>operation when the remote n=
+ode closes the SSH connection</p><p>LoginGraceTime 0</p></td>
+<td style=3D"width: 37.48%;" class=3D"confluenceTd">grep&nbsp;<span style=
+=3D"color: rgb(23,43,77);text-decoration: none;">LoginGraceTime</span> /etc=
+/ssh/sshd_config</td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">sendmail</td>
+<td colspan=3D"1" class=3D"confluenceTd">RS</td>
+<td colspan=3D"1" class=3D"confluenceTd">Enable sendmail ability for operat=
+ional monitoring and alerting</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr style=3D"margin-left: 0.0px;">
+<td colspan=3D"1" class=3D"confluenceTd">SELINUX</td>
+<td colspan=3D"1" class=3D"confluenceTd">RS</td>
+<td colspan=3D"1" class=3D"confluenceTd">Configure to permissive else we ge=
+t permissions issues when running root.sh script for ASMFD</td>
+<td colspan=3D"1" class=3D"confluenceTd">cat /etc/sysconfig/selinux</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-19cOracleGridInfrastructure&amp;DatabaseServerLowLevelDesignOE=
+L7,8-References">References</h1>
+<p><a href=3D"https://docs.oracle.com/en/database/oracle/oracle-database/19=
+/install-and-upgrade.html" class=3D"external-link" rel=3D"nofollow">https:/=
+/docs.oracle.com/en/database/oracle/oracle-database/19/install-and-upgrade.=
+html</a></p>
+<p><a href=3D"https://docs.oracle.com/en/database/oracle/oracle-database/19=
+/cwlin/grid-infrastructure-installation-and-upgrade-guide-linux.pdf" class=
+=3D"external-link" rel=3D"nofollow">https://docs.oracle.com/en/database/ora=
+cle/oracle-database/19/cwlin/grid-infrastructure-installation-and-upgrade-g=
+uide-linux.pdf</a></p>
+<p><a href=3D"https://docs.oracle.com/en/database/oracle/oracle-database/19=
+/ladbi/database-installation-guide-linux.pdf" class=3D"external-link" rel=
+=3D"nofollow">https://docs.oracle.com/en/database/oracle/oracle-database/19=
+/ladbi/database-installation-guide-linux.pdf</a></p>
+<p>Oracle Support Document 2551169.1 (Requirements for Installing Oracle Da=
+tabase 19c on OL7 or RHEL7 64-bit (x86-64)) can be found at: <a href=3D"htt=
+ps://support.oracle.com/epmos/faces/DocumentDisplay?id=3D2551169.1" class=
+=3D"external-link" rel=3D"nofollow">https://support.oracle.com/epmos/faces/=
+DocumentDisplay?id=3D2551169.1</a></p>
+<p>Oracle Support Document 811306.1 (RAC and Oracle Clusterware Best Practi=
+ces and Starter Kit (Linux)) can be found at: <a href=3D"https://support.or=
+acle.com/epmos/faces/DocumentDisplay?id=3D811306.1" class=3D"external-link"=
+ rel=3D"nofollow">https://support.oracle.com/epmos/faces/DocumentDisplay?id=
+=3D811306.1</a></p>
+<p>Oracle Support Document 341788.1 (Recommendation for the Real Applicatio=
+n Cluster Interconnect and Jumbo Frames) can be found at: <a href=3D"https:=
+//support.oracle.com/epmos/faces/DocumentDisplay?id=3D341788.1" class=3D"ex=
+ternal-link" rel=3D"nofollow">https://support.oracle.com/epmos/faces/Docume=
+ntDisplay?id=3D341788.1</a></p>
+<p>Oracle Support Document 2501269.1 (Oracle Linux : Recommended Value of v=
+m.min_free_kbytes Kernel Tuning Parameter) can be found at: <a href=3D"http=
+s://support.oracle.com/epmos/faces/DocumentDisplay?id=3D2501269.1" class=3D=
+"external-link" rel=3D"nofollow">https://support.oracle.com/epmos/faces/Doc=
+umentDisplay?id=3D2501269.1</a></p>
+<p>Oracle Support Document 236826.1 (Supported and Recommended File Systems=
+ on Linux) can be found at: <a href=3D"https://support.oracle.com/epmos/fac=
+es/DocumentDisplay?id=3D236826.1" class=3D"external-link" rel=3D"nofollow">=
+https://support.oracle.com/epmos/faces/DocumentDisplay?id=3D236826.1</a></p=
+>
+<p>Oracle Support Document 728346.1 (Linux OS Installation with Reduced Set=
+ of Packages for Running Oracle Database Server) can be found at: <a href=
+=3D"https://support.oracle.com/epmos/faces/DocumentDisplay?id=3D728346.1" c=
+lass=3D"external-link" rel=3D"nofollow">https://support.oracle.com/epmos/fa=
+ces/DocumentDisplay?id=3D728346.1</a></p>
+<p>Oracle Support Document 1369107.1 (ACFS Support On OS Platforms (Certifi=
+cation Matrix).) can be found at: <a href=3D"https://support.oracle.com/epm=
+os/faces/DocumentDisplay?id=3D1369107.1" class=3D"external-link" rel=3D"nof=
+ollow">https://support.oracle.com/epmos/faces/DocumentDisplay?id=3D1369107.=
+1</a></p>
+<p>Oracle Support Document 2550798.1 (Autonomous Health Framework (AHF) - I=
+ncluding TFA and ORAchk/EXAChk) can be found at: <a href=3D"https://support=
+.oracle.com/epmos/faces/DocumentDisplay?id=3D2550798.1" class=3D"external-l=
+ink" rel=3D"nofollow">https://support.oracle.com/epmos/faces/DocumentDispla=
+y?id=3D2550798.1</a></p>
+<p><a href=3D"/display/BLTENV/Enable+Jumbo+Frames+for+VMware">Enable Jumbo =
+Frames for VMware</a></p>
+<p><a href=3D"/display/AR/ITSP0206+-+Linux+and+Windows+Server+EOL+Upgrade+H=
+LD">ITSP0206 - Linux and Windows Server EOL Upgrade HLD262144&nbsp;</a></p>
+    </div>
+</body>
+</html>
+------=_Part_9713_125851770.1683206488804--

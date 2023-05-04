@@ -1,0 +1,949 @@
+Date: Thu, 4 May 2023 14:09:43 +0100 (BST)
+Message-ID: <1310590490.9592.1683205783585@sprdcfap01.admiral.uk>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_9591_1185445795.1683205783576"
+
+------=_Part_9591_1185445795.1683205783576
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Upgrade 12c to 19c</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Upgrade 12c to 19c</h1>
+    <div class=3D"Section1">
+        <p>-- IMPORTANT -- Please check before starting by doing passwordle=
+ss SSH using DOMAIN.NAME - Issue faced -- Domain name ssh not enabled&nbsp;=
+</p>
+<p><br>[oracle@bb-pt-agdb01 ~]$ export ORACLE_SID=3DSPT2AGA1<br>[oracle@bb-=
+pt-agdb01 ~]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 12.1.0.2.0 Production on Wed Dec 21 14:49:22 2022</p>
+<p>Copyright (c) 1982, 2014, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; SELECT DECODE(value, NU=
+LL, 'PFILE', 'SPFILE') "Init File Type" from sys.v_$parameter where name=3D=
+'spfile';</p>
+<p>Init F<br>------<br>SPFILE</p>
+<p>SQL&gt; select count(*) from v$archive_dest_status where type!=3D'LOCAL'=
+;</p>
+<p>&nbsp; COUNT(*)<br>----------<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0</p>
+<p>set linesize 200<br>col object_name for a40<br>col object_type for a20<b=
+r>col owner for a10<br>select object_name, object_type, owner, status from =
+dba_objects where status!=3D'VALID' and owner=3D'SYS';</p>
+<p>no rows selected</p>
+<p>SQL&gt; exit<br>Disconnected from Oracle Database 12c Enterprise Edition=
+ Release 12.1.0.2.0 - 64bit Production<br>With the Partitioning, Real Appli=
+cation Clusters, Automatic Storage Management, OLAP,<br>Advanced Analytics =
+and Real Application Testing options</p>
+<p><br>[oracle@bb-pt-agdb01 ~]$ cd /home/oracle/upgrade</p>
+<p><br>[oracle@bb-pt-agdb01 upgrade]$ ls<br>autoupgrade_last.jar<br>[oracle=
+@bb-pt-agdb01 upgrade]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 12.1.0.2.0 Production on Wed Dec 21 15:02:26 2022</p>
+<p>Copyright (c) 1982, 2014, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; create pfile=3D'/home/o=
+racle/upgrade/initSPT2AGA.ora' from spfile;</p>
+<p>File created.</p>
+<p>SQL&gt; exit<br>Disconnected from Oracle Database 12c Enterprise Edition=
+ Release 12.1.0.2.0 - 64bit Production<br>With the Partitioning, Real Appli=
+cation Clusters, Automatic Storage Management, OLAP,<br>Advanced Analytics =
+and Real Application Testing options<br>[oracle@bb-pt-agdb01 upgrade]$ ls -=
+lrt<br>total 4796<br>-rw-r-----. 1 oracle dba 4898958 Dec 21 10:56 autoupgr=
+ade_last.jar<br>-rw-r--r--. 1 oracle dba &nbsp; &nbsp;6287 Dec 21 15:02 ini=
+tSPT2AGA.ora<br>[oracle@bb-pt-agdb01 upgrade]$ mv initSPT2AGA.ora initSPT2A=
+GA.ora_save<br>[oracle@bb-pt-agdb01 upgrade]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 12.1.0.2.0 Production on Wed Dec 21 15:03:24 2022</p>
+<p>Copyright (c) 1982, 2014, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; select tablespace_name,=
+ sum(bytes)/1024/1024 from dba_data_files where tablespace_name in ('SYSTEM=
+','SYSAUX') group by tablespace_name;</p>
+<p>TABLESPACE_NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S=
+UM(BYTES)/1024/1024<br>------------------------------ --------------------<=
+br>SYSAUX &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+9541<br>SYSTEM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;25000</p>
+<p>FREE SPACE&nbsp;</p>
+<p>SQL&gt; select tablespace_name, sum(bytes)/1024/1024 from dba_segments w=
+here tablespace_name in ('SYSTEM','SYSAUX') group by tablespace_name;</p>
+<p>TABLESPACE_NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S=
+UM(BYTES)/1024/1024<br>------------------------------ --------------------<=
+br>SYSAUX &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7826.25<=
+br>SYSTEM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11904.5625</p>
+<p>SQL&gt; show parameter case -- If set to False oracle will change it to =
+TRUE during upgrade you will have to manually change it back to FALSE later=
+</p>
+<p>NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TYPE &nbsp; &nbsp; &nbsp; &nbs=
+p;VALUE<br>------------------------------------ ----------- ---------------=
+---------------<br>sec_case_sensitive_logon &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; boolean &nbsp; &nbsp; TRUE</p>
+<p><br>set linesize 200<br>select to_char(max(end_time),'DD-MON-YY hh24:mi:=
+ss') LATEST, operation from DBA_OPTSTAT_OPERATIONS where operation in ('gat=
+her_dictionary_stats', 'gather_fixed_objects_stats') group by operation;</p=
+>
+<p>no rows selected</p>
+<p>EXEC DBMS_STATS.GATHER_DICTIONARY_STATS;<br>EXEC DBMS_STATS.GATHER_FIXED=
+_OBJECTS_STATS ;</p>
+<p>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;</p>
+<p>PL/SQL procedure successfully completed.</p>
+<p>select to_char(max(end_time),'DD-MON-YY hh24:mi:ss') LATEST, operation f=
+rom DBA_OPTSTAT_OPERATIONS where operation in ('gather_dictionary_stats', '=
+gather_fixed_objects_stats') group by operation;</p>
+<p>LATEST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp;OPERATION<br>--------------------------- -----------------------=
+-----------------------------------------<br>21-DEC-22 15:07:20 &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp;gather_fixed_objects_stats<br>21-DEC-22 15:06:07 &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;gather_dictionary_stats</p>
+<p>exec dbms_stats.gather_schema_stats('SYS');<br>exec dbms_stats.gather_in=
+dex_stats('SYS','I_OBJ#');<br>exec dbms_stats.gather_index_stats('SYS','I_F=
+ILE#_BLOCK#');<br>exec dbms_stats.gather_index_stats('SYS','I_TS#');<br>exe=
+c dbms_stats.gather_index_stats('SYS','I_USER#');<br>exec dbms_stats.gather=
+_index_stats('SYS','I_TOID_VERSION#');<br>exec dbms_stats.gather_index_stat=
+s('SYS','I_MLOG#');<br>exec dbms_stats.gather_index_stats('SYS','I_RG#');</=
+p>
+<p><br></p>
+<p><br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt;<br>PL/SQL procedure successfully completed.</p>
+<p>SQL&gt; SQL&gt; SQL&gt; SQL&gt; exit<br>Disconnected from Oracle Databas=
+e 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production<br>With the =
+Partitioning, Real Application Clusters, Automatic Storage Management, OLAP=
+,<br>Advanced Analytics and Real Application Testing options</p>
+<p><br>export ORACLE_HOME_19c=3D/u01/app/oracle/product/19.16.0/db_1<br>exp=
+ort ORACLE_HOME_12c=3D/u01/app/oracle/product/12.1.0/db_1<br>export PATH=3D=
+$ORACLE_HOME_19c/jdk/bin/:$PATH<br>java -jar /home/oracle/upgrade/autoupgra=
+de_last.jar -version</p>
+<p><br>[oracle@bb-pt-agdb01 upgrade]$ ls<br>autoupgrade_last.jar &nbsp;init=
+SPT2AGA.ora_save</p>
+<p><br>[oracle@bb-pt-agdb01 upgrade]$ java -jar /home/oracle/upgrade/autoup=
+grade_last.jar -version<br>build.version 22.5.221011<br>build.date 2022/10/=
+11 14:23:59 -0400<br>build.hash e9428661<br>build.hash_date 2022/10/11 12:5=
+5:45 -0400<br>build.supported_target_versions 12.2,18,19,21<br>build.type p=
+roduction</p>
+<p><br></p>
+<p>[oracle@bb-pt-agdb01 upgrade]$ ls<br>autoupgrade_last.jar &nbsp;initSPT2=
+AGA.ora_save</p>
+<p><br>mv $ORACLE_HOME_19c/rdbms/admin/autoupgrade.jar $ORACLE_HOME_19c/rdb=
+ms/admin/autoupgrade.jar.20221222</p>
+<p><br></p>
+<p><br>cp /home/oracle/upgrade/autoupgrade_last.jar $ORACLE_HOME_19c/rdbms/=
+admin/autoupgrade.jar<br>cp /home/oracle/upgrade/autoupgrade_last.jar $ORAC=
+LE_HOME_12c/rdbms/admin/autoupgrade.jar<br>export RESP_FILE=3D$ORACLE_HOME/=
+rdbms/admin/config_SPT2SRA.cfg<br>vi $RESP_FILE<br>## please paste below an=
+d modify according -- also create logs/dbname directory - for multiple data=
+bases create different directories</p>
+<p>[oracle@bb-pt-gwdb01 upgrade]$ more $RESP_FILE<br># Create a new folder =
+for each database<br>#<br>global.autoupg_log_dir=3D/home/oracle/upgrade/log=
+s/SPT2SRA/<br>upg1.log_dir=3D/home/oracle/upgrade/logs/SPT2SRA/ &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp;# Ensure the directory is created<br>upg1.sid=
+=3D SPT2SRA1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; # Source First instance name<br>upg1.dbname=3D SPT2SRA<br>=
+upg1.source_home=3D/u01/app/oracle/product/12.1.0/db_1 &nbsp;# Path of the =
+source ORACLE_HOME<br>upg1.target_home=3D/u01/app/oracle/product/19.16.0/db=
+_1 &nbsp;# Path of the target ORACLE_HOME<br>upg1.start_time=3DNOW<br>upg1.=
+upgrade_node=3Dlocalhost<br>upg1.source_tns_admin_dir=3D/u01/app/oracle/pro=
+duct/12.1.0/db_1<br>upg1.target_tns_admin_dir=3D/u01/app/oracle/product/19.=
+16.0/db_1<br>upg1.run_utlrp=3D yes<br>upg1.timezone_upg=3D yes &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; # No, in case of a downgrade</p>
+<p><br></p>
+<p><br></p>
+<p>[oracle@bb-pt-agdb01 upgrade]$ mkdir logs<br>[oracle@bb-pt-agdb01 upgrad=
+e]$ cd logs<br>[oracle@bb-pt-agdb01 logs]$ mkdir SPT2AGA<br>[oracle@bb-pt-a=
+gdb01 logs]$ cd ../..</p>
+<p><br></p>
+<p><br>echo $ORACLE_BASE<br>/u01/app/oracle</p>
+<p>java -jar $ORACLE_HOME_12c/rdbms/admin/autoupgrade.jar -config $RESP_FIL=
+E -mode fixups -noconsole</p>
+<p>[oracle@bb-pt-gwdb01 upgrade]$ java -jar $ORACLE_HOME_12c/rdbms/admin/au=
+toupgrade.jar -config $RESP_FILE -mode fixups -noconsole<br>AutoUpgrade 22.=
+5.221011 launched with default internal options<br>Processing config file .=
+..<br>+--------------------------------+<br>| Starting AutoUpgrade executio=
+n |<br>+--------------------------------+<br>1 Non-CDB(s) will be processed=
+<br>Job 100 database spt2sra1<br>+----+--------+---------+---------+-------=
++----------+-------+-------+<br>|Job#| DB_NAME| &nbsp; &nbsp;STAGE|OPERATIO=
+N| STATUS|START_TIME|UPDATED|MESSAGE|<br>+----+--------+---------+---------=
++-------+----------+-------+-------+<br>| 100|SPT2SRA1|PREFIXUPS|EXECUTING|=
+RUNNING| &nbsp;14:42:47|10s ago| &nbsp; &nbsp; &nbsp; |<br>+----+--------+-=
+--------+---------+-------+----------+-------+-------+<br>Total jobs 1</p>
+<p>+----+--------+---------+---------+-------+----------+-------+-------+<b=
+r>|Job#| DB_NAME| &nbsp; &nbsp;STAGE|OPERATION| STATUS|START_TIME|UPDATED|M=
+ESSAGE|<br>+----+--------+---------+---------+-------+----------+-------+--=
+-----+<br>| 100|SPT2SRA1|PREFIXUPS|EXECUTING|RUNNING| &nbsp;14:42:47|40s ag=
+o| &nbsp; &nbsp; &nbsp; |<br>+----+--------+---------+---------+-------+---=
+-------+-------+-------+<br>Total jobs 1</p>
+<p>Job 100 completed<br>------------------- Final Summary -----------------=
+---<br>Number of databases &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[ 1 ]</=
+p>
+<p>Jobs finished &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;[1]<br>Jobs failed &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp;[0]</p>
+<p>Please check the summary report at:<br>/home/oracle/upgrade/logs/SPT2SRA=
+/cfgtoollogs/upgrade/auto/status/status.html<br>/home/oracle/upgrade/logs/S=
+PT2SRA/cfgtoollogs/upgrade/auto/status/status.log<br>[oracle@bb-pt-gwdb01 u=
+pgrade]$ more /home/oracle/upgrade/logs/SPT2SRA/cfgtoollogs/upgrade/auto/st=
+atus/status.log<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Autoupgrade Summary Report<br>=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[Date] &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; Thu Dec 22 14:44:15 GMT 2022<br>[Number of Jobs] 1<br>=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[Job ID] 100<br>=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[DB Name] &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SPT2SRA<br>[Version Before Upgrade] 12.=
+1.0.2.0<br>[Version After Upgrade] &nbsp;19.16.0.0.0<br>-------------------=
+-----------------------<br>[Stage Name] &nbsp; &nbsp;PRECHECKS<br>[Status] =
+&nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 =
+14:42:47<br>[Duration] &nbsp; &nbsp; &nbsp;0:00:14<br>[Log Directory] /home=
+/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/100/prechecks<br>[Detail] &nbsp; &nbs=
+p; &nbsp; &nbsp;/home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/100/prechecks/sp=
+t2sra_preupgrade.log<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; Check passed and no manual intervention needed<br>--------------------=
+----------------------<br>[Stage Name] &nbsp; &nbsp;PREFIXUPS<br>[Status] &=
+nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 1=
+4:43:01<br>[Duration]<br>[Log Directory] /home/oracle/upgrade/logs/SPT2SRA/=
+SPT2SRA1/100/prefixups<br>[Detail] &nbsp; &nbsp; &nbsp; &nbsp;/home/oracle/=
+upgrade/logs/SPT2SRA/SPT2SRA1/100/prefixups/prefixups.xml<br>--------------=
+----------------------------</p>
+<p><br></p>
+<p><br></p>
+<p>cd /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/100/prechecks &nbsp;-- 100=
+ is the Job# number from fixups run</p>
+<p>[oracle@bb-pt-gwdb01 prechecks]$ more spt2sra_preupgrade.log<br>Report g=
+enerated by AutoUpgrade 22.5.221011 (#e9428661) on 2022-12-22 14:43:01</p>
+<p>Upgrade-To version: 19.0.0.0.0</p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>Status of the database pri=
+or to upgrade<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>&nbsp; &nbs=
+p; &nbsp; Database Name: &nbsp;SPT2SRA1<br>&nbsp; &nbsp; &nbsp;Container Na=
+me: &nbsp;SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp;Container ID: &nbsp;0<br>&=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Version: &nbsp;12.1.0.2.0<br>&nbsp=
+; &nbsp; &nbsp;DB Patch Level: &nbsp;UNKNOWN<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp;Compatible: &nbsp;12.1.0.2.0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B=
+locksize: &nbsp;8192<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Platform: =
+&nbsp;Linux x86 64-bit<br>&nbsp; &nbsp; &nbsp; Timezone File: &nbsp;18<br>&=
+nbsp; Database log mode: &nbsp;ARCHIVELOG<br>&nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp;Readonly: &nbsp;false<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; Edition: &nbsp;EE</p>
+<p>&nbsp; Oracle Component &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; Upgrade Action &nbsp; &nbsp;Current Status<br>=
+&nbsp; ---------------- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; -------------- &nbsp; &nbsp;--------------<br>&nb=
+sp; Oracle Server &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[to be upgraded] &nbsp;VALID<br>&nbsp; Ora=
+cle Java Packages &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; [to be upgraded] &nbsp;VALID<br>&nbsp; JServer JAVA Virtual Machine &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [to be upgraded] &nbsp;VALID<br>&nbsp; Or=
+acle Multimedia &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp;[to be upgraded] &nbsp;VALID<br>&nbsp; Oracle Workspace Ma=
+nager &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [to be upgraded] &nb=
+sp;VALID<br>&nbsp; Real Application Clusters &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp;[to be upgraded] &nbsp;VALID<br>&nbsp; Oracle XML Databas=
+e &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[to =
+be upgraded] &nbsp;VALID<br>&nbsp; Oracle XDK for Java &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[to be upgraded] &nbsp;VAL=
+ID</p>
+<p>&nbsp; *<br>&nbsp; * ALL Components in This Database Registry:<br>&nbsp;=
+ *<br>&nbsp; Component &nbsp; Current &nbsp; &nbsp; &nbsp;Current &nbsp; &n=
+bsp; &nbsp;Original &nbsp; &nbsp; Previous &nbsp; &nbsp; Component<br>&nbsp=
+; CID &nbsp; &nbsp; &nbsp; &nbsp; Version &nbsp; &nbsp; &nbsp;Status &nbsp;=
+ &nbsp; &nbsp; Version &nbsp; &nbsp; &nbsp;Version &nbsp; &nbsp; &nbsp;Sche=
+ma<br>&nbsp; ---------- &nbsp;----------- &nbsp;----------- &nbsp;---------=
+-- &nbsp;----------- &nbsp;------------<br>&nbsp; APEX &nbsp; &nbsp; &nbsp;=
+ &nbsp;4.2.5.00.08 &nbsp;VALID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A=
+PEX_040200<br>&nbsp; CATALOG &nbsp; &nbsp; 12.1.0.2.0 &nbsp; VALID &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SYS<br>&nbsp; CATJAVA &nbsp; &nbsp; 12.1=
+.0.2.0 &nbsp; VALID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SYS<br>&nbsp=
+; CATPROC &nbsp; &nbsp; 12.1.0.2.0 &nbsp; VALID &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp;SYS<br>&nbsp; JAVAVM &nbsp; &nbsp; &nbsp;12.1.0.2.0 &nbsp; =
+VALID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SYS<br>&nbsp; ORDIM &nbsp;=
+ &nbsp; &nbsp; 12.1.0.2.0 &nbsp; VALID &nbsp; &nbsp; &nbsp; &nbsp;12.1.0.2.=
+0 &nbsp; 12.1.0.2.0 &nbsp; ORDSYS<br>&nbsp; OWM &nbsp; &nbsp; &nbsp; &nbsp;=
+ 12.1.0.2.0 &nbsp; VALID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WMSYS<b=
+r>&nbsp; RAC &nbsp; &nbsp; &nbsp; &nbsp; 12.1.0.2.0 &nbsp; VALID &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SYS<br>&nbsp; XDB &nbsp; &nbsp; &nbsp; &nb=
+sp; 12.1.0.2.0 &nbsp; VALID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;XDB<=
+br>&nbsp; XML &nbsp; &nbsp; &nbsp; &nbsp; 12.1.0.2.0 &nbsp; VALID &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SYS</p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>BEFORE UPGRADE<br>=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+<p>&nbsp; REQUIRED ACTIONS<br>&nbsp; =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D<br>&nbsp; 1. &nbsp;(AUTOFIXUP) Empty the RECYCLEBIN immediatel=
+y before database upgrade.</p>
+<p>&nbsp; &nbsp; &nbsp; The database contains 3332 objects in the recycle b=
+in.</p>
+<p>&nbsp; &nbsp; &nbsp; The recycle bin must be completely empty before dat=
+abase upgrade.</p>
+<p>&nbsp; 2. &nbsp;(AUTOFIXUP) Remove initialization parameters that Oracle=
+ has obsoleted or<br>&nbsp; &nbsp; &nbsp; removed. &nbsp;This action may be=
+ done now or when starting the database in<br>&nbsp; &nbsp; &nbsp; upgrade =
+mode using the target ORACLE HOME.</p>
+<p>&nbsp; &nbsp; &nbsp; Obsolete Parameter<br>&nbsp; &nbsp; &nbsp; --------=
+----------<br>&nbsp; &nbsp; &nbsp; utl_file_dir</p>
+<p>&nbsp; &nbsp; &nbsp; If parameters that are obsolete or removed from the=
+ target release are<br>&nbsp; &nbsp; &nbsp; present in the pfile/spfile, th=
+e Oracle database may not start, or it may<br>&nbsp; &nbsp; &nbsp; start wi=
+th an ORA- error.</p>
+<p>--- NO errors only warning / recomendations</p>
+<p><br></p>
+<p>on deploy prompt -- lsj / status / status -job jobno (useful information=
+ commands)</p>
+<p><br></p>
+<p>[oracle@bb-pt-gwdb01 SPT2SRA1]$ java -jar $ORACLE_HOME_12c/rdbms/admin/a=
+utoupgrade.jar -config $RESP_FILE -mode deploy<br>AutoUpgrade 22.5.221011 l=
+aunched with default internal options<br>Processing config file ...<br>+---=
+-----------------------------+<br>| Starting AutoUpgrade execution |<br>+--=
+------------------------------+<br>1 Non-CDB(s) will be processed<br>Type '=
+help' to list console commands<br>upg&gt; lsj<br>+----+--------+-----+-----=
+----+-------+----------+-------+------------------------+<br>|Job#| DB_NAME=
+|STAGE|OPERATION| STATUS|START_TIME|UPDATED| &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; MESSAGE|<br>+----+--------+-----+---------+------=
+-+----------+-------+------------------------+<br>| 101|SPT2SRA1|DRAIN|EXEC=
+UTING|RUNNING| &nbsp;15:03:50|19s ago|Disabling RAC if present|<br>+----+--=
+------+-----+---------+-------+----------+-------+------------------------+=
+<br>Total jobs 1</p>
+<p>upg&gt; status</p>
+<p>Config</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; User configuration file &nbsp; &nbsp;[/u01/a=
+pp/oracle/product/12.1.0/db_1/rdbms/admin/config_SPT2SRA.cfg]<br>&nbsp; &nb=
+sp; &nbsp; &nbsp; General logs location &nbsp; &nbsp; &nbsp;[/home/oracle/u=
+pgrade/logs/SPT2SRA/cfgtoollogs/upgrade/auto]<br>&nbsp; &nbsp; &nbsp; &nbsp=
+; Mode &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; [DEPLOY]<br>Jobs Summary</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Total databases in configuration file [1]<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; Total Non-CDB being processed &nbsp; &nbsp; &n=
+bsp; &nbsp; [1]<br>&nbsp; &nbsp; &nbsp; &nbsp; Total Containers being proce=
+ssed &nbsp; &nbsp; &nbsp;[0]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Jobs finished successfully &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp;[0]<br>&nbsp; &nbsp; &nbsp; &nbsp; Jobs finished/ab=
+orted &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [0]<br>&nbsp;=
+ &nbsp; &nbsp; &nbsp; Jobs in progress &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[1]</p>
+<p>Progress<br>&nbsp; &nbsp; &nbsp; &nbsp; +---+---------------------------=
+------------------------------+<br>&nbsp; &nbsp; &nbsp; &nbsp; |Job| &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; Progress|<br>&nbsp; &nbsp; &nbsp; &nbsp; +---+-----------------=
+----------------------------------------+<br>&nbsp; &nbsp; &nbsp; &nbsp; |1=
+01|[|||||||||||||||||||||| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;] 42 %|<br>&nbsp; &nbsp; &=
+nbsp; &nbsp; +---+---------------------------------------------------------=
++</p>
+<p>upg&gt; status -job 101<br>Details</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Job No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10=
+1<br>&nbsp; &nbsp; &nbsp; &nbsp; Oracle SID &nbsp; &nbsp; &nbsp; SPT2SRA1<b=
+r>&nbsp; &nbsp; &nbsp; &nbsp; Start Time &nbsp; &nbsp; &nbsp; 22/12/22 15:0=
+3:50<br>&nbsp; &nbsp; &nbsp; &nbsp; Elapsed (min): &nbsp; 2<br>&nbsp; &nbsp=
+; &nbsp; &nbsp; End time: &nbsp; &nbsp; &nbsp; &nbsp;N/A</p>
+<p>Logfiles</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Logs Base: &nbsp; &nbsp;/home/oracle/upgrade=
+/logs/SPT2SRA/SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp; Job logs: &nbsp; &nbs=
+p; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101<br>&nbsp; &nbsp; &nbsp; &=
+nbsp; Stage logs: &nbsp; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/dbu=
+pgrade<br>&nbsp; &nbsp; &nbsp; &nbsp; TimeZone: &nbsp; &nbsp; /home/oracle/=
+upgrade/logs/SPT2SRA/SPT2SRA1/temp<br>&nbsp; &nbsp; &nbsp; &nbsp; Remote Di=
+rs:</p>
+<p>Stages<br>&nbsp; &nbsp; &nbsp; &nbsp; SETUP &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; GRP &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRE=
+UPGRADE &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRECH=
+ECKS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PR=
+EFIXUPS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ DRAIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DBUPGRADE &nbsp; &nbsp; &nbsp; &nbsp;~0 min (RUNNING)<br>&nbsp; &=
+nbsp; &nbsp; &nbsp; POSTCHECKS<br>&nbsp; &nbsp; &nbsp; &nbsp; POSTFIXUPS<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; POSTUPGRADE<br>&nbsp; &nbsp; &nbsp; &nbsp; SYS=
+UPDATES</p>
+<p>Stage-Progress Per Container</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---------+<br>&nbsp; &nbsp; &nbsp;=
+ &nbsp; |Database|DBUPGRADE|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+-----=
+----+<br>&nbsp; &nbsp; &nbsp; &nbsp; |SPT2SRA1| &nbsp; &nbsp;0 &nbsp;% |<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---------+</p>
+<p>upg&gt; status -job 101<br>Details</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Job No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10=
+1<br>&nbsp; &nbsp; &nbsp; &nbsp; Oracle SID &nbsp; &nbsp; &nbsp; SPT2SRA1<b=
+r>&nbsp; &nbsp; &nbsp; &nbsp; Start Time &nbsp; &nbsp; &nbsp; 22/12/22 15:0=
+3:50<br>&nbsp; &nbsp; &nbsp; &nbsp; Elapsed (min): &nbsp; 3<br>&nbsp; &nbsp=
+; &nbsp; &nbsp; End time: &nbsp; &nbsp; &nbsp; &nbsp;N/A</p>
+<p>Logfiles</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Logs Base: &nbsp; &nbsp;/home/oracle/upgrade=
+/logs/SPT2SRA/SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp; Job logs: &nbsp; &nbs=
+p; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101<br>&nbsp; &nbsp; &nbsp; &=
+nbsp; Stage logs: &nbsp; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/dbu=
+pgrade<br>&nbsp; &nbsp; &nbsp; &nbsp; TimeZone: &nbsp; &nbsp; /home/oracle/=
+upgrade/logs/SPT2SRA/SPT2SRA1/temp<br>&nbsp; &nbsp; &nbsp; &nbsp; Remote Di=
+rs:</p>
+<p>Stages<br>&nbsp; &nbsp; &nbsp; &nbsp; SETUP &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; GRP &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRE=
+UPGRADE &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRECH=
+ECKS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PR=
+EFIXUPS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ DRAIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DBUPGRADE &nbsp; &nbsp; &nbsp; &nbsp;~1 min (RUNNING)<br>&nbsp; &=
+nbsp; &nbsp; &nbsp; POSTCHECKS<br>&nbsp; &nbsp; &nbsp; &nbsp; POSTFIXUPS<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; POSTUPGRADE<br>&nbsp; &nbsp; &nbsp; &nbsp; SYS=
+UPDATES</p>
+<p>Stage-Progress Per Container</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---------+<br>&nbsp; &nbsp; &nbsp;=
+ &nbsp; |Database|DBUPGRADE|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+-----=
+----+<br>&nbsp; &nbsp; &nbsp; &nbsp; |SPT2SRA1| &nbsp; &nbsp;0 &nbsp;% |<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---------+</p>
+<p>upg&gt; status -job 101<br>Details</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Job No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10=
+1<br>&nbsp; &nbsp; &nbsp; &nbsp; Oracle SID &nbsp; &nbsp; &nbsp; SPT2SRA1<b=
+r>&nbsp; &nbsp; &nbsp; &nbsp; Start Time &nbsp; &nbsp; &nbsp; 22/12/22 15:0=
+3:50<br>&nbsp; &nbsp; &nbsp; &nbsp; Elapsed (min): &nbsp; 7<br>&nbsp; &nbsp=
+; &nbsp; &nbsp; End time: &nbsp; &nbsp; &nbsp; &nbsp;N/A</p>
+<p>Logfiles</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Logs Base: &nbsp; &nbsp;/home/oracle/upgrade=
+/logs/SPT2SRA/SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp; Job logs: &nbsp; &nbs=
+p; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101<br>&nbsp; &nbsp; &nbsp; &=
+nbsp; Stage logs: &nbsp; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/dbu=
+pgrade<br>&nbsp; &nbsp; &nbsp; &nbsp; TimeZone: &nbsp; &nbsp; /home/oracle/=
+upgrade/logs/SPT2SRA/SPT2SRA1/temp<br>&nbsp; &nbsp; &nbsp; &nbsp; Remote Di=
+rs:</p>
+<p>Stages<br>&nbsp; &nbsp; &nbsp; &nbsp; SETUP &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; GRP &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRE=
+UPGRADE &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRECH=
+ECKS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PR=
+EFIXUPS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ DRAIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DBUPGRADE &nbsp; &nbsp; &nbsp; &nbsp;~4 min (RUNNING)<br>&nbsp; &=
+nbsp; &nbsp; &nbsp; POSTCHECKS<br>&nbsp; &nbsp; &nbsp; &nbsp; POSTFIXUPS<br=
+>&nbsp; &nbsp; &nbsp; &nbsp; POSTUPGRADE<br>&nbsp; &nbsp; &nbsp; &nbsp; SYS=
+UPDATES</p>
+<p>Stage-Progress Per Container</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---------+<br>&nbsp; &nbsp; &nbsp;=
+ &nbsp; |Database|DBUPGRADE|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+-----=
+----+<br>&nbsp; &nbsp; &nbsp; &nbsp; |SPT2SRA1| &nbsp; &nbsp;23 % |<br>&nbs=
+p; &nbsp; &nbsp; &nbsp; +--------+---------+</p>
+<p>upg&gt; status -job 101<br>Details</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Job No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10=
+1<br>&nbsp; &nbsp; &nbsp; &nbsp; Oracle SID &nbsp; &nbsp; &nbsp; SPT2SRA1<b=
+r>&nbsp; &nbsp; &nbsp; &nbsp; Start Time &nbsp; &nbsp; &nbsp; 22/12/22 15:0=
+3:50<br>&nbsp; &nbsp; &nbsp; &nbsp; Elapsed (min): &nbsp; 18<br>&nbsp; &nbs=
+p; &nbsp; &nbsp; End time: &nbsp; &nbsp; &nbsp; &nbsp;N/A</p>
+<p>Logfiles</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Logs Base: &nbsp; &nbsp;/home/oracle/upgrade=
+/logs/SPT2SRA/SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp; Job logs: &nbsp; &nbs=
+p; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101<br>&nbsp; &nbsp; &nbsp; &=
+nbsp; Stage logs: &nbsp; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/pos=
+tfixups<br>&nbsp; &nbsp; &nbsp; &nbsp; TimeZone: &nbsp; &nbsp; /home/oracle=
+/upgrade/logs/SPT2SRA/SPT2SRA1/temp<br>&nbsp; &nbsp; &nbsp; &nbsp; Remote D=
+irs:</p>
+<p>Stages<br>&nbsp; &nbsp; &nbsp; &nbsp; SETUP &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; GRP &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRE=
+UPGRADE &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRECH=
+ECKS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PR=
+EFIXUPS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ DRAIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DBUPGRADE &nbsp; &nbsp; &nbsp; &nbsp;15 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DISPATCH &nbsp; &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &=
+nbsp; &nbsp; POSTCHECKS &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nb=
+sp; &nbsp; POSTFIXUPS &nbsp; &nbsp; &nbsp; ~0 min (RUNNING)<br>&nbsp; &nbsp=
+; &nbsp; &nbsp; POSTUPGRADE<br>&nbsp; &nbsp; &nbsp; &nbsp; SYSUPDATES</p>
+<p>Stage-Progress Per Container</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; +--------+----------+<br>&nbsp; &nbsp; &nbsp=
+; &nbsp; |Database|POSTFIXUPS|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---=
+-------+<br>&nbsp; &nbsp; &nbsp; &nbsp; |SPT2SRA1| &nbsp; &nbsp; 0 &nbsp;% =
+|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+----------+</p>
+<p>upg&gt; status -job 101<br>Details</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Job No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10=
+1<br>&nbsp; &nbsp; &nbsp; &nbsp; Oracle SID &nbsp; &nbsp; &nbsp; SPT2SRA1<b=
+r>&nbsp; &nbsp; &nbsp; &nbsp; Start Time &nbsp; &nbsp; &nbsp; 22/12/22 15:0=
+3:50<br>&nbsp; &nbsp; &nbsp; &nbsp; Elapsed (min): &nbsp; 21<br>&nbsp; &nbs=
+p; &nbsp; &nbsp; End time: &nbsp; &nbsp; &nbsp; &nbsp;N/A</p>
+<p>Logfiles</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Logs Base: &nbsp; &nbsp;/home/oracle/upgrade=
+/logs/SPT2SRA/SPT2SRA1<br>&nbsp; &nbsp; &nbsp; &nbsp; Job logs: &nbsp; &nbs=
+p; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101<br>&nbsp; &nbsp; &nbsp; &=
+nbsp; Stage logs: &nbsp; /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/pos=
+tfixups<br>&nbsp; &nbsp; &nbsp; &nbsp; TimeZone: &nbsp; &nbsp; /home/oracle=
+/upgrade/logs/SPT2SRA/SPT2SRA1/temp<br>&nbsp; &nbsp; &nbsp; &nbsp; Remote D=
+irs:</p>
+<p>Stages<br>&nbsp; &nbsp; &nbsp; &nbsp; SETUP &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; GRP &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRE=
+UPGRADE &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PRECH=
+ECKS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp; PR=
+EFIXUPS &nbsp; &nbsp; &nbsp; &nbsp;&lt;1 min<br>&nbsp; &nbsp; &nbsp; &nbsp;=
+ DRAIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DBUPGRADE &nbsp; &nbsp; &nbsp; &nbsp;15 min<br>&nbsp; &nbsp; &nbs=
+p; &nbsp; DISPATCH &nbsp; &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &=
+nbsp; &nbsp; POSTCHECKS &nbsp; &nbsp; &nbsp; &lt;1 min<br>&nbsp; &nbsp; &nb=
+sp; &nbsp; POSTFIXUPS &nbsp; &nbsp; &nbsp; ~3 min (RUNNING)<br>&nbsp; &nbsp=
+; &nbsp; &nbsp; POSTUPGRADE<br>&nbsp; &nbsp; &nbsp; &nbsp; SYSUPDATES</p>
+<p>Stage-Progress Per Container</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; +--------+----------+<br>&nbsp; &nbsp; &nbsp=
+; &nbsp; |Database|POSTFIXUPS|<br>&nbsp; &nbsp; &nbsp; &nbsp; +--------+---=
+-------+<br>&nbsp; &nbsp; &nbsp; &nbsp; |SPT2SRA1| &nbsp; &nbsp; 80 % |<br>=
+&nbsp; &nbsp; &nbsp; &nbsp; +--------+----------+</p>
+<p>upg&gt; Job 101 completed<br>------------------- Final Summary ---------=
+-----------<br>Number of databases &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+;[ 1 ]</p>
+<p>Jobs finished &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;[1]<br>Jobs failed &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp;[0]<br>Jobs restored &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp;[0]<br>Jobs pending &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; [0]</p>
+<p>---- Drop GRP at your convenience once you consider it is no longer need=
+ed ----<br>Drop GRP from SPT2SRA1: drop restore point AUTOUPGRADE_9212_SPT2=
+SRA121020</p>
+<p><br>Please check the summary report at:<br>/home/oracle/upgrade/logs/SPT=
+2SRA/cfgtoollogs/upgrade/auto/status/status.html<br>/home/oracle/upgrade/lo=
+gs/SPT2SRA/cfgtoollogs/upgrade/auto/status/status.log</p>
+<p>[oracle@bb-pt-gwdb01 SPT2SRA1]$ more /home/oracle/upgrade/logs/SPT2SRA/c=
+fgtoollogs/upgrade/auto/status/status.log<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Autoupgrade Sum=
+mary Report<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[Date=
+] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thu Dec 22 15:28:10 GMT 2022<br>[Numbe=
+r of Jobs] 1<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[J=
+ob ID] 101<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>[DB N=
+ame] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SPT2SRA<br>[Ver=
+sion Before Upgrade] 12.1.0.2.0<br>[Version After Upgrade] &nbsp;19.16.0.0.=
+0<br>------------------------------------------<br>[Stage Name] &nbsp; &nbs=
+p;GRP<br>[Status] &nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp;=
+ &nbsp;2022-12-22 15:03:50<br>[Duration] &nbsp; &nbsp; &nbsp;0:00:00<br>[De=
+tail] &nbsp; &nbsp; &nbsp; &nbsp;Please drop the following GRPs after Autou=
+pgrade completes:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp;AUTOUPGRADE_9212_SPT2SRA121020<br>---------------------------------=
+---------<br>[Stage Name] &nbsp; &nbsp;PREUPGRADE<br>[Status] &nbsp; &nbsp;=
+ &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 15:03:50<br>[=
+Duration] &nbsp; &nbsp; &nbsp;0:00:00<br>[Log Directory] /home/oracle/upgra=
+de/logs/SPT2SRA/SPT2SRA1/101/preupgrade<br>--------------------------------=
+----------<br>[Stage Name] &nbsp; &nbsp;PRECHECKS<br>[Status] &nbsp; &nbsp;=
+ &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 15:03:50<br>[=
+Duration] &nbsp; &nbsp; &nbsp;0:00:05<br>[Log Directory] /home/oracle/upgra=
+de/logs/SPT2SRA/SPT2SRA1/101/prechecks<br>[Detail] &nbsp; &nbsp; &nbsp; &nb=
+sp;/home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/prechecks/spt2sra_preupgr=
+ade.log<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Check pa=
+ssed and no manual intervention needed<br>---------------------------------=
+---------<br>[Stage Name] &nbsp; &nbsp;PREFIXUPS<br>[Status] &nbsp; &nbsp; =
+&nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 15:03:56<br>[D=
+uration] &nbsp; &nbsp; &nbsp;0:00:05<br>[Log Directory] /home/oracle/upgrad=
+e/logs/SPT2SRA/SPT2SRA1/101/prefixups<br>[Detail] &nbsp; &nbsp; &nbsp; &nbs=
+p;/home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/prefixups/prefixups.xml<br=
+>------------------------------------------<br>[Stage Name] &nbsp; &nbsp;DR=
+AIN<br>[Status] &nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &=
+nbsp;2022-12-22 15:04:02<br>[Duration] &nbsp; &nbsp; &nbsp;0:02:16<br>[Log =
+Directory] /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/drain<br>--------=
+----------------------------------<br>[Stage Name] &nbsp; &nbsp;DBUPGRADE<b=
+r>[Status] &nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;=
+2022-12-22 15:06:18<br>[Duration] &nbsp; &nbsp; &nbsp;0:15:25<br>[Log Direc=
+tory] /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/dbupgrade<br>---------=
+---------------------------------<br>[Stage Name] &nbsp; &nbsp;POSTCHECKS<b=
+r>[Status] &nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;=
+2022-12-22 15:22:05<br>[Duration] &nbsp; &nbsp; &nbsp;0:00:00<br>[Log Direc=
+tory] /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/postchecks<br>[Detail]=
+ &nbsp; &nbsp; &nbsp; &nbsp;/home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/=
+postchecks/spt2sra_postupgrade.log<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; Check passed and no manual intervention needed<br>------=
+------------------------------------<br>[Stage Name] &nbsp; &nbsp;POSTFIXUP=
+S<br>[Status] &nbsp; &nbsp; &nbsp; &nbsp;SUCCESS<br>[Start Time] &nbsp; &nb=
+sp;2022-12-22 15:22:05<br>[Duration] &nbsp; &nbsp; &nbsp;0:04:44<br>[Log Di=
+rectory] /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/postfixups<br>[Deta=
+il] &nbsp; &nbsp; &nbsp; &nbsp;/home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/1=
+01/postfixups/postfixups.xml<br>------------------------------------------<=
+br>[Stage Name] &nbsp; &nbsp;POSTUPGRADE<br>[Status] &nbsp; &nbsp; &nbsp; &=
+nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 15:26:50<br>[Duration]=
+ &nbsp; &nbsp; &nbsp;0:00:05<br>[Log Directory] /home/oracle/upgrade/logs/S=
+PT2SRA/SPT2SRA1/101/postupgrade<br>----------------------------------------=
+--<br>[Stage Name] &nbsp; &nbsp;SYSUPDATES<br>[Status] &nbsp; &nbsp; &nbsp;=
+ &nbsp;SUCCESS<br>[Start Time] &nbsp; &nbsp;2022-12-22 15:26:56<br>[Duratio=
+n]<br>[Log Directory] /home/oracle/upgrade/logs/SPT2SRA/SPT2SRA1/101/sysupd=
+ates<br>------------------------------------------<br>Summary: /home/oracle=
+/upgrade/logs/SPT2SRA/SPT2SRA1/101/dbupgrade/upg_summary.log</p>
+<p><br></p>
+<p><br>[oracle@bb-pt-agdb01 upgrade]$ . oraenv<br>ORACLE_SID =3D [SPT2AGA1]=
+ ? ORCL191<br>The Oracle base remains unchanged with value /u01/app/oracle<=
+br>[oracle@bb-pt-agdb01 upgrade]$ export ORACLE_SID=3DSPT2AGA1<br>[oracle@b=
+b-pt-agdb01 upgrade]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 19.0.0.0.0 - Production on Wed Dec 21 16:28:07 2022<br=
+>Version 19.16.0.0.0</p>
+<p>Copyright (c) 1982, 2022, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; archive log list<br>Dat=
+abase log mode &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Archive Mode=
+<br>Automatic archival &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enabled<br=
+>Archive destination &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;USE_DB_RECOVE=
+RY_FILE_DEST<br>Oldest online log sequence &nbsp; &nbsp; 6<br>Next log sequ=
+ence to archive &nbsp; 10<br>Current log sequence &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; 10<br>SQL&gt; exit<br>Disconnected from Oracle Database 19c Enter=
+prise Edition Release 19.0.0.0.0 - Production<br>Version 19.16.0.0.0<br>[or=
+acle@bb-pt-gwdb01 dbupgrade]$ more /home/oracle/upgrade/logs/SPT2SRA/SPT2SR=
+A1/101/dbupgrade/upg_summary.log</p>
+<p>Oracle Database Release 19 Post-Upgrade Status Tool &nbsp; &nbsp;12-22-2=
+022 15:20:1<br>Database Name: SPT2SRA</p>
+<p>Component &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Current &nbsp; &nbsp; &nbsp; &nb=
+sp; Full &nbsp; &nbsp; Elapsed Time<br>Name &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp;Status &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Version &nbsp;H=
+H:MM:SS</p>
+<p>Oracle Server &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp;UPGRADED &nbsp; &nbsp; 19.16.0.0.0 &nbsp;00=
+:06:14<br>JServer JAVA Virtual Machine &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U=
+PGRADED &nbsp; &nbsp; 19.16.0.0.0 &nbsp;00:01:42<br>Oracle XDK &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; UPGRADED &nbsp; &nbsp; 19.16.0.0.0 &nbsp;00:00:36<br>Oracle Data=
+base Java Packages &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;UPGRADED &nbsp; &nbsp;=
+ 19.16.0.0.0 &nbsp;00:00:07<br>Oracle Workspace Manager &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; UPGRADED &nbsp; &nbsp; 19.16.0.0.0 &nbsp;00:0=
+0:16<br>Oracle Real Application Clusters &nbsp; &nbsp; &nbsp; UPGRADED &nbs=
+p; &nbsp; 19.16.0.0.0 &nbsp;00:00:00<br>Oracle XML Database &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;UPGRADED &nbsp; &nbsp=
+; 19.16.0.0.0 &nbsp;00:00:49<br>Oracle Multimedia &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;UPGRADED &nbsp; &nbsp; 1=
+9.16.0.0.0 &nbsp;00:01:10<br>Datapatch &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp;00:00:41<br>Final Actions &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;00:01:10<=
+br>Post Upgrade &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00:00:19</p>
+<p>Total Upgrade Time: 00:12:33</p>
+<p>Database time zone version is 18. It is older than current release time<=
+br>zone version 32. Time zone upgrade is needed using the DBMS_DST package.=
+</p>
+<p>Grand Total Upgrade Time: &nbsp; &nbsp;[0d:0h:15m:25s]</p>
+<p><br>[oracle@bb-pt-agdb01 dbupgrade]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 19.0.0.0.0 - Production on Wed Dec 21 16:42:08 2022<br=
+>Version 19.16.0.0.0</p>
+<p>Copyright (c) 1982, 2022, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>col COMP_NAME form a50<br>col s=
+tatus form a20<br>select comp_name,STATUS from dba_registry;</p>
+<p>select * from registry$error;</p>
+<p><br>COMP_NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;STATUS<br>-------------------------------------------------- -=
+-------------------<br>Oracle Database Catalog Views &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;VALID<br>Oracle Datab=
+ase Packages and Types &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; VALID<br>JServer JAVA Virtual Machine &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VALID<br>Oracle XDK &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VALID<br>Oracle Datab=
+ase Java Packages &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp;VALID<br>Oracle Real Application Clusters &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VALID<br>Oracle XML Databa=
+se &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;VALID<br>Oracle Workspace Manager &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; VALID<br>Oracle Multimedia &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp;VALID<br>Oracle Application Express &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VALID</p>
+<p>10 rows selected.</p>
+<p>SQL&gt; SQL&gt;<br>no rows selected</p>
+<p>SQL&gt; SQL&gt; select owner, count(*) from dba_objects where status !=
+=3D'VALID' group by owner;</p>
+<p>no rows selected</p>
+<p>EXECUTE DBMS_STATS.GATHER_DICTIONARY_STATS;<br>EXECUTE DBMS_STATS.GATHER=
+_FIXED_OBJECTS_STATS;</p>
+<p><br>PL/SQL procedure successfully completed.</p>
+<p>[oracle@bb-pt-agdb01 ~]$ export ORACLE_SID=3DSPT2AGA1<br>[oracle@bb-pt-a=
+gdb01 ~]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 19.0.0.0.0 - Production on Thu Dec 22 16:08:51 2022<br=
+>Version 19.16.0.0.0</p>
+<p>Copyright (c) 1982, 2022, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; select name from v$rest=
+ore_point;</p>
+<p>NAME<br>----------------------------------------------------------------=
+----------------<br>AUTOUPGRADE_9212_SPT2AGA121020</p>
+<p>SQL&gt; drop restore point AUTOUPGRADE_9212_SPT2AGA121020;</p>
+<p>Restore point dropped.</p>
+<p>SQL&gt; show parameter comp</p>
+<p>NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TYPE &nbsp; &nbsp; &nbsp; &nbs=
+p;VALUE<br>------------------------------------ ----------- ---------------=
+---------------<br>cell_offload_compaction &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp;string &nbsp; &nbsp; &nbsp;ADAPTIVE<br>compatible &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; string &nbsp; &nbsp; &nbsp;12.1.0.2.0<br>db_index_compression_inheri=
+tance &nbsp; &nbsp; string &nbsp; &nbsp; &nbsp;NONE<br>inmemory_prefer_xmem=
+_memcompress &nbsp; &nbsp; string<br>nls_comp &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string=
+ &nbsp; &nbsp; &nbsp;BINARY<br>noncdb_compatible &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;boolean &nbsp; &nbsp; FALSE<br>p=
+lsql_v2_compatibility &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bool=
+ean &nbsp; &nbsp; FALSE<br>SQL&gt; alter system set compatible=3D'19.0.0' s=
+cope=3Dspfile sid=3D'*';</p>
+<p>System altered.</p>
+<p>SQL&gt; exit<br>Disconnected from Oracle Database 19c Enterprise Edition=
+ Release 19.0.0.0.0 - Production<br>Version 19.16.0.0.0<br>[oracle@bb-pt-ag=
+db01 ~]$ srvctl stop database -d SPT2AGA<br>[oracle@bb-pt-agdb01 ~]$ srvctl=
+ start database -d SPT2AGA<br>[oracle@bb-pt-agdb01 ~]$ sqlplus /nolog</p>
+<p>SQL*Plus: Release 19.0.0.0.0 - Production on Thu Dec 22 16:11:25 2022<br=
+>Version 19.16.0.0.0</p>
+<p>Copyright (c) 1982, 2022, Oracle. &nbsp;All rights reserved.</p>
+<p>SQL&gt; conn /as sysdba<br>Connected.<br>SQL&gt; show parameter comp</p>
+<p>NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TYPE &nbsp; &nbsp; &nbsp; &nbs=
+p;VALUE<br>------------------------------------ ----------- ---------------=
+---------------<br>cell_offload_compaction &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp;string &nbsp; &nbsp; &nbsp;ADAPTIVE<br>compatible &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; string &nbsp; &nbsp; &nbsp;19.0.0<br>db_index_compression_inheritanc=
+e &nbsp; &nbsp; string &nbsp; &nbsp; &nbsp;NONE<br>inmemory_prefer_xmem_mem=
+compress &nbsp; &nbsp; string<br>nls_comp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string &nb=
+sp; &nbsp; &nbsp;BINARY<br>noncdb_compatible &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;boolean &nbsp; &nbsp; FALSE<br>plsql=
+_v2_compatibility &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean =
+&nbsp; &nbsp; FALSE<br>SQL&gt;</p>
+<p>&nbsp;create restore point BEFORE_GW10UPG guarantee flashback database;<=
+/p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_9591_1185445795.1683205783576--
