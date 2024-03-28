@@ -1,0 +1,89 @@
+04-22-2020 13:10:16 UTC :  : Running Node Addition and cluvfy test for node racnode2
+04-22-2020 13:10:16 UTC :  : Copying /tmp/grid_addnode.rsp on remote node racnode1
+04-22-2020 13:10:16 UTC :  : Running GridSetup.sh on racnode1 to add the node to existing cluster
+04-22-2020 13:11:07 UTC :  : Node Addition performed. removing Responsefile
+04-22-2020 13:11:07 UTC :  : Running root.sh on node racnode2
+04-22-2020 13:11:07 UTC :  : Nodes in the cluster racnode2
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+Failed to parse kernel command line, ignoring: No such file or directory
+04-22-2020 13:23:30 UTC :  : Checking Cluster
+04-22-2020 13:23:30 UTC :  : Cluster Check passed
+04-22-2020 13:23:30 UTC :  : Cluster Check went fine
+04-22-2020 13:23:31 UTC : : CRSD Check failed!
+04-22-2020 13:23:31 UTC : : Error has occurred in Grid Setup, Please verify!
+
+$ docker info
+Client:
+ Debug Mode: false
+
+Server:
+ Containers: 4
+  Running: 4
+  Paused: 0
+  Stopped: 0
+ Images: 106
+ Server Version: 19.03.1-ol
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: c4446665cb9c30056f4998ed953e6d4ff22c7c39
+ runc version: 4bb1fe4ace1a32d3676bb98f5d3b6a4e32bf6c58
+ init version: fec3683
+ Security Options:
+  seccomp
+   Profile: default
+  selinux
+ Kernel Version: 4.14.35-1902.301.1.el7uek.x86_64
+ Operating System: Oracle Linux Server 7.8
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 8
+ Total Memory: 31.15GiB
+ Name: ip-172-31-2-173.eu-west-1.compute.internal
+ ID: WMBC:AVXV:SCZB:AID6:OJRK:35RK:ABR2:MQIT:HER7:RN5E:UVBJ:6JFC
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+Registries: 
+
+$ systemctl status -l docker
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)
+   Active: active (running) since Wed 2020-04-22 11:49:57 UTC; 6h ago
+     Docs: https://docs.docker.com
+ Main PID: 26317 (dockerd)
+    Tasks: 30
+   Memory: 139.2M
+   CGroup: /system.slice/docker.service
+           ├─ 1868 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 1522 -container-ip 172.16.1.15 -container-port 1521
+           └─26317 /usr/bin/dockerd --selinux-enabled --cpu-rt-runtime=950000 --cpu-rt-period=1000000 -H fd:// --containerd=/run/containerd/containerd.sock
+
+$ docker ps -a
+$ docker images 
